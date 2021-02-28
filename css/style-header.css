@@ -1,0 +1,79 @@
+header, header .h-pos{
+    position: relative;
+}
+
+header .conteiner{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header .lsg{
+    background: linear-gradient(99.95deg, #1D737E -2.54%, #4FB9C7 114.45%);
+    border-radius: 57px;
+    transform: rotate(45deg);
+    width: 375px;
+    height: 375px;
+    position: absolute;
+    top: -11em;
+    left: -2em;
+}
+
+header .lsg img{
+    width: 120px;
+    transform: rotate(-45deg);
+    margin-top: 168px;
+    margin-left: 200px;
+}
+
+header .menu-pos{
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 70px;
+}
+
+header .menu-pos .info a{
+    background: linear-gradient(360deg, #1D737E -74.42%, #4FB9C7 154.17%);
+    border-radius: 57px;
+    color: #C2FF01;
+    margin-right: 60px;
+    padding: 20px 30px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+header nav .menu{
+    background-color: black;
+    border-radius: 35px;
+    width: 42px;
+    height: 5px;
+    position: relative;
+    top: 7px;
+    cursor: pointer;
+}
+
+header nav .menu::before, header nav .menu::after{
+    background-color: #197081;
+    border-radius: 35px;
+    content: '';
+    width: 22px;
+    height: 5px;
+    position: absolute;
+}
+
+header nav .menu::before{
+    left: 0;
+    top: -10px;
+}
+
+header nav .menu::after{
+    right: 0;
+    top: 10px;
+}
+
+header nav .menu span{
+    display: none;
+}
