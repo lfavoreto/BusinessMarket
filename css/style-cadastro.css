@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p{ 
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+fieldset{
+    border: none;
+}
+
+main{
+    overflow: hidden;
+    position: relative;
+}
+
+.conteiner{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.body-conteiner{
+    overflow: hidden;
+    position: relative;
+}
+
+.body-conteiner::after{
+    content: '';
+    border: solid 1px #197081;
+    border-radius: 57px;
+    height: 450px;
+    position: absolute;
+    left: -220px;
+    bottom: 110px;
+    opacity: 0.4;
+    width: 450px;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.body-conteiner::before{
+    content: '';
+    border: solid 1px #197081;
+    border-radius: 57px;
+    height: 450px;
+    position: absolute;
+    left: -220px;
+    bottom: -10px;
+    opacity: 0.4;
+    width: 450px;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+header, header .h-pos{
+    position: relative;
+}
+
+header .conteiner{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header .lsg{
+    background: linear-gradient(99.95deg, #1D737E -2.54%, #4FB9C7 114.45%);
+    border-radius: 40px;
+    transform: rotate(45deg);
+    width: 425px;
+    height: 425px;
+    position: absolute;
+    top: -14em;
+    left: 50%;
+    margin-left: -212px;
+    z-index: 2;
+}
+
+header .lsg img{
+    width: 120px;
+    transform: rotate(-45deg);
+    margin-top: 220px;
+    margin-left: 250px;
+}
+
+main::after{
+    content: '';
+    border: solid 1px #197081;
+    border-radius: 57px;
+    height: 450px;
+    position: absolute;
+    right: -220px;
+    top: 70px;
+    opacity: 0.4;
+    width: 450px;
+    transform: rotate(45deg);
+}
+
+main::before{
+    content: '';
+    border: solid 1px #197081;
+    border-radius: 57px;
+    height: 450px;
+    position: absolute;
+    right: -220px;
+    top: -50px;
+    opacity: 0.4;
+    width: 450px;
+    transform: rotate(45deg);
+}
+
+main .bg-principal{
+    background: linear-gradient(220.36deg, rgba(25, 112, 129, 0.32) 0%, rgba(247, 247, 249, 0) 44.63%)  ;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+main .ficha-cadastro{
+    background: linear-gradient(180deg, #171717 41.46%, rgba(23, 23, 23, 0) 100%);
+    background-color: black;
+    border-radius: 55px;
+    text-align: center;
+    color: white;
+    padding-top: 280px;
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+main .position, main .cad{
+    margin: 0 auto;
+    position: relative;
+}
+
+main .position::after{
+    content: '';
+    background-color:#C2FF01;
+    height: 300px;
+    position: absolute;
+    left: -45px;
+    top: 280px;
+    width: 300px;
+    transform: rotate(45deg);
+    border-radius: 57px;
+    z-index: -1;
+}
+
+main .position::before{
+    content: '';
+    background-color:#C2FF01;
+    height: 130px;
+    position: absolute;
+    left: -90px;
+    top: 150px;
+    width: 130px;
+    transform: rotate(45deg);
+    border-radius: 37px;
+    z-index: -1;
+}
+
+main .ficha-cadastro::before{
+    content: '';
+    border: solid 1px #19708180;
+    border-radius: 57px;
+    height: 450px;
+    position: absolute;
+    right: -400px;
+    bottom: -90px;
+    opacity: 0.4;
+    width: 450px;
+    transform: rotate(45deg);
+}
+
+main .ficha-cadastro::after{
+    content: '';
+    border: solid 1px #19708180;
+    border-radius: 57px;
+    height: 450px;
+    position: absolute;
+    right: -400px;
+    bottom: 90px;
+    opacity: 0.4;
+    width: 450px;
+    transform: rotate(45deg);
+}
+
+main .cad::before{
+    content: '';
+    background-color:#C2FF01;
+    height: 130px;
+    position: absolute;
+    right: 45px;
+    bottom: 70px;
+    width: 130px;
+    transform: rotate(45deg);
+    border-radius: 37px;
+    z-index: 2;
+}
+
+main .ficha-cadastro fieldset, main #etapa03{
+    width: 60%;
+    margin: 0 auto;
+}
+
+main .ficha-cadastro fieldset:not(:first-of-type){
+    display: none;
+}
+
+main ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main ul li{
+    display: inline-block;
+    font-size: 13px;
+    border: 2px solid #C2FF01;
+    border-radius: 15px;
+    width: 45px;
+    height: 45px;
+    transform: rotate(45deg);
+    position: relative;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+main ul li::after, main ul li::before{
+    content: url(../img/icons/dotted.png);
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+main ul li::after{
+    bottom: -28px;
+    right: 38px;
+}
+
+main ul li::before{
+    bottom: 55px;
+    left: 35px;
+}
+
+main .no-dotted-left::after, main .no-dotted-right::before{
+    content: none;
+}
+
+main ul li div{
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 13px;
+    top: 15px;
+}
+
+main ul li.selected{
+    background-color: #C2FF01;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+main ul li.selected div::before{
+    content: '';
+    border: solid 1px #19708180;
+    border-radius: 27px;
+    height: 100px;
+    position: absolute;
+    left: -50px;
+    top: -30px;
+    opacity: 0.4;
+    width: 100px;
+    transform: rotate(45deg);
+}
+
+main ul li.selected div::after{
+    content: '';
+    border: solid 1px #19708180;
+    border-radius: 27px;
+    height: 100px;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    opacity: 0.4;
+    width: 100px;
+    transform: rotate(45deg);
+}
+
+main ul li.selected div{
+    left: 11px;
+    top: 5px;
+}
+
+main h1{
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    size: 25px;
+    margin-top: 100px;
+}
+
+main h1 span{
+    font-weight: lighter;
+}
+
+main form .cont{
+    width: 75%;
+    margin: 50px auto;
+}
+
+main form label, main form input{
+    display: block;
+    text-align: left;
+}
+
+main form label{
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+main form input{
+    width: 100%;
+    border: none;
+	border-bottom: 2px solid #C2FF01;
+    border-radius: 2px;
+	background: none;
+    color: white;
+    padding: 15px 0;
+    font-size: 13px;
+}
+
+main form input:focus{
+	outline: 0;
+}
+
+form .botao{
+    margin: 0 auto;
+    display: flex;
+}
+
+main form input[type=submit], main a{
+    background-color: #C2FF01;
+    border: 1px solid transparent;
+    border-radius: 57px;
+    width: 200px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    margin: 80px auto 0 auto;
+    cursor: pointer;
+    display: inline;
+    width: 170px;
+    text-align: center;
+}
+
+main form input[type=submit]:hover, main #etapa03 a:hover{
+    background-color: transparent;
+    border: 1px solid #C2FF01;
+    color: white;
+    transition: 0.5s;
+}
+
+main #etapa03 .botao{
+    margin-top: 120px;
+}
+
+main #etapa03 a{
+    padding: 20px 40px;
+}
+
+main .fc03{
+    height: 500px;
+}
+
+footer {
+    background-color: black;
+    margin-top: 60px;
+    height: 220px;
+    text-align: right;
+    position: relative;
+    padding: 10px;
+}
+
+footer span{
+    color: white;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+footer img{
+    margin-top: 150px;
+}

@@ -1,0 +1,47 @@
+@media(max-width: 1536px){
+    main::after, main::before,
+    .body-conteiner::after, .body-conteiner::before{
+        display: none;
+    }
+}
+
+@media(max-width: 940px){
+    form::before, form::after,
+    .cad::before{
+        display: none;
+    }
+}
+
+@media(max-width: 740px){
+    main .ficha-cadastro{
+        width: 100%;
+        border-radius: 0;
+        height: auto;
+    }
+
+    main .ficha-cadastro fieldset, main #etapa03{
+        width: 85%;
+    }
+
+    main ul li::after, main ul li::before{
+        display: none;
+    }
+
+    form .botao{
+        flex-wrap: wrap;
+    }
+
+    main form input[type=submit].subm{
+        margin: 50px auto;
+    }
+
+    main ul li.selected div::after, main ul li.selected div::before,
+    main .ficha-cadastro::before, main .ficha-cadastro::after{
+        display: none;
+    }
+
+    main #etapa03 .botao{
+        margin-top: 60px;
+        padding-bottom: 130px;
+    }
+}
