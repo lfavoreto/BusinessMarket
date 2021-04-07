@@ -10,11 +10,16 @@ function validateEmail(email) {
 $(function(){
     var et01 = document.getElementById('etapa01');
     var et02 = document.getElementById('etapa02');
+
     var name = document.getElementById('fullname');
+    var mail = document.getElementById('email');
     var cel = document.getElementById('cel');
+    var cpf = document.getElementById('cpf');
+    var cidade = document.getElementById('cidade');
+    var estado = document.getElementById('estado');
 
     $('.next').click(function(){
-        const email = $("#email").val();
+        const email = $('#email').val();
         
         if (validateEmail(email) && name.value && cel.value) {
             et01.style = "display: none";
@@ -27,7 +32,9 @@ $(function(){
         et02.style = "display: none";
     });
 
-    $('.subm').click(function(){
-
+    $('.conti').click(function(){
+        if (mail.value && name.value && cel.value && cpf.value && cidade.value && estado.value){
+            return false;
+        }
     });
 });

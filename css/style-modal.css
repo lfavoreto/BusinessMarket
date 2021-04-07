@@ -1,0 +1,168 @@
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 3; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.7); 
+    color: black;
+    text-align: left;
+  }
+  
+  .modal-content {
+    background: linear-gradient(220.36deg, rgba(25, 112, 129, 0.32) 0%, rgba(247, 247, 249, 0) 44.63%);
+    background-color: white;
+    margin: 2% auto; 
+    border: 1px solid #888;
+    padding: 120px 10px;
+    width: 1092px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .modal-content::after{
+    content: '';
+    border: solid 1px #197081;
+    border-radius: 57px;
+    height: 450px;
+    position: absolute;
+    right: -180px;
+    top: 130px;
+    opacity: 0.4;
+    width: 450px;
+    transform: rotate(45deg);
+  }
+
+  .modal-content::before{
+    content: '';
+    border: solid 1px #197081;
+    border-radius: 57px;
+    height: 450px;
+    position: absolute;
+    right: -180px;
+    top: 0px;
+    opacity: 0.4;
+    width: 450px;
+    transform: rotate(45deg);
+  }
+  
+
+  .close {
+    color: #aaa;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.modal .conteiner{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.modal .conteiner::after{
+    content: '';
+    background: linear-gradient(320deg, rgba(255,255,255,1) 67%, rgba(0,212,255,0) 100%);
+    border-radius: 57px;
+    height: 450px;
+    position: absolute;
+    right: -180px;
+    top: 400px;
+    opacity: 0.8;
+    width: 450px;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.modal h2{
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.modal ul{
+    margin: 80px 20px 0;
+}
+
+.modal ul li{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "Source Sans Pro";
+    margin-top: 40px;
+}
+
+.modal ul li span{
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.modal .lsg{
+    background: linear-gradient(99.95deg, #1D737E 147.42%, #4FB9C7 264.41%);
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: -250px;
+    top: 0;
+    border-radius: 57px;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.modal .conteiner::before{
+    content: '';
+    background-color:#C2FF01;
+    height: 350px;
+    position: absolute;
+    left: -100px;
+    bottom: -100px;
+    width: 350px;
+    border-radius: 57px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.modal img{
+    width: 120px;
+    position: absolute;
+    left: 70%;
+    top: 35%;
+    margin-left: -60px;
+    margin-top: -100px;
+    transform: rotate(-45deg);
+}
+
+.modal .botao{
+    margin-top: 80px;
+}
+
+.modal .botao input{
+    display: inline-block;
+    margin: 0 auto;
+    background: linear-gradient(0deg, #1D737E -74.42%, #4FB9C7 154.17%);
+    border: none;
+    border-radius: 57px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    cursor: pointer;
+    display: inline;
+    text-align: center;
+}

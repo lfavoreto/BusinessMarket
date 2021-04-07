@@ -12,6 +12,7 @@
 
         <link href="../css/fonts.css" rel="stylesheet">
         <link href="../css/style-cadastro.css" rel="stylesheet">
+        <link href="../css/style-modal.css" rel="stylesheet">
         <link href="../css/style-mobile-cadastro.css" rel="stylesheet">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -52,10 +53,10 @@
                                             <input type="email" name="email" id="email" placeholder="EX: lucasfavoreto@gmail.com" autocomplete="off" required class="in-etapa01">
 
                                             <label for="cel">Celular</label>
-                                            <input type="tel" name="cel" id="cel" placeholder="EX: 13999999999" maxlength="15" autocomplete="off" required class="in-etapa01">
+                                            <input type="tel" name="cel" id="cel" placeholder="EX: 13999999999" maxlength="15" autocomplete="off" required class="in-etapa01" minlength="15">
                                             
                                             <div class="botao">
-                                                <input type="submit" name="next" value="Continuar" class="next acao">
+                                                <input type="submit" name="next" value="Continuar" class="next acao conti">
                                             </div>
                                         </div>
                                     </fieldset>
@@ -80,10 +81,32 @@
                                             
                                             <div class="botao">
                                                 <a class="prev acao">Voltar</a>
-                                                <input type="submit" name="enviar" value="Enviar" class="subm">
+                                                <input type="submit" name="enviar" value="Enviar" class="subm" onclick="apear(); return false;">
                                             </div>
                                         </div>
                                     </fieldset>
+
+                                    <div id="myModal" class="modal">
+                                        <div class="modal-content">
+                                          <span class="close">&times;</span>
+                                          <div class="lsg">
+                                            <img src="../img/logo.png" alt="Logo da empresa Business Market">
+                                          </div>
+                                          <div class="conteiner">
+                                            <div class="principal">
+                                                <h2>Não saia ainda! Preparamos um presente especial para você.</h2>
+                                                <ul>
+                                                    <li>Seu Nome: <span id="no"></span></li>
+                                                    <li>Telefone: <span id="te"></span></li>
+                                                    <li>CPF: <span id="cp"></span></li>
+                                                </ul>
+                                                <div class="botao">
+                                                    <input type="submit" onclick="return true" value="Concluir Inscrição">
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>  
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -92,10 +115,14 @@
             </main>
             <footer>
                 <div class="conteiner">
-                    <span>Design by </span><img src="../img/logo-kbr.png" alt="Logo da KbrTec">
+                    <span>Design by </span><img src="../img/logo-kbr.png" alt="Logo da empresa Business Market">
                 </div>
             </footer>
         </div>
         <script text="text/javascript" src="../js/cadastro.js"></script>
+        <script text="text/javascript" src="../js/modal.js"></script>
+        <script>
+            
+        </script>
     </body>
 </html>

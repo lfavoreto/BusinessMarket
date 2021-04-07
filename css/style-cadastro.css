@@ -95,6 +95,7 @@ header .lsg img{
     transform: rotate(-45deg);
     margin-top: 220px;
     margin-left: 250px;
+    cursor: pointer;
 }
 
 main::after{
@@ -124,7 +125,7 @@ main::before{
 }
 
 main .bg-principal{
-    background: linear-gradient(220.36deg, rgba(25, 112, 129, 0.32) 0%, rgba(247, 247, 249, 0) 44.63%)  ;
+    background: linear-gradient(220.36deg, rgba(25, 112, 129, 0.32) 0%, rgba(247, 247, 249, 0) 44.63%);
     padding-top: 100px;
     overflow: hidden;
 }
@@ -222,14 +223,14 @@ main .ficha-cadastro fieldset:not(:first-of-type){
     display: none;
 }
 
-main ul {
+main fieldset ul, main #etapa03 ul{
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
 }
 
-main ul li{
+main fieldset ul li, main #etapa03 ul li{
     display: inline-block;
     font-size: 13px;
     border: 2px solid #C2FF01;
@@ -241,41 +242,42 @@ main ul li{
     font-family: "Source Sans Pro", sans-serif;
 }
 
-main ul li::after, main ul li::before{
+main fieldset ul li::after, main fieldset ul li::before, main #etapa03 ul li::after, main #etapa03 ul li::before{
     content: url(../img/icons/dotted.png);
     position: absolute;
     transform: rotate(-45deg);
 }
 
-main ul li::after{
+main fieldset ul li::after, main #etapa03 ul li::after{
     bottom: -28px;
     right: 38px;
 }
 
-main ul li::before{
+main fieldset ul li::before, main #etapa03 ul li::before{
     bottom: 55px;
     left: 35px;
 }
 
-main .no-dotted-left::after, main .no-dotted-right::before{
+main .no-dotted-left::after, main .no-dotted-right::before,
+main #etapa03 .no-dotted-left::after, main #etapa03 .no-dotted-right::before{
     content: none;
 }
 
-main ul li div{
+main fieldset ul li div, main #etapa03 ul li div{
     transform: rotate(-45deg);
     position: absolute;
     left: 13px;
     top: 15px;
 }
 
-main ul li.selected{
+main fieldset ul li.selected, main #etapa03 ul li.selected{
     background-color: #C2FF01;
     color: black;
     font-size: 28px;
     font-weight: bold;
 }
 
-main ul li.selected div::before{
+main fieldset ul li.selected div::before, main #etapa03 ul li.selected div::before{
     content: '';
     border: solid 1px #19708180;
     border-radius: 27px;
@@ -288,7 +290,7 @@ main ul li.selected div::before{
     transform: rotate(45deg);
 }
 
-main ul li.selected div::after{
+main fieldset ul li.selected div::after, main #etapa03 ul li.selected div::after{
     content: '';
     border: solid 1px #19708180;
     border-radius: 27px;
@@ -301,7 +303,7 @@ main ul li.selected div::after{
     transform: rotate(45deg);
 }
 
-main ul li.selected div{
+main fieldset ul li.selected div, main #etapa03 ul li.selected div{
     left: 11px;
     top: 5px;
 }
@@ -335,7 +337,7 @@ main form label{
     margin-top: 40px;
 }
 
-main form input{
+main form fieldset input{
     width: 100%;
     border: none;
 	border-bottom: 2px solid #C2FF01;
@@ -355,7 +357,7 @@ form .botao{
     display: flex;
 }
 
-main form input[type=submit], main a{
+main form fieldset input[type=submit], main fieldset a, main #etapa03 a{
     background-color: #C2FF01;
     border: 1px solid transparent;
     border-radius: 57px;
@@ -372,7 +374,7 @@ main form input[type=submit], main a{
     text-align: center;
 }
 
-main form input[type=submit]:hover, main #etapa03 a:hover{
+main form fieldset input[type=submit]:hover, main #etapa03 a:hover{
     background-color: transparent;
     border: 1px solid #C2FF01;
     color: white;
