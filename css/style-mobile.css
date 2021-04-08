@@ -1,10 +1,7 @@
 @media(max-width: 1494px){
-    main .moldura-01::before,
-    main .moldura-01::after,
-    main::before,
-    main::after,
-    main .principal::before,
-    main .principal::after{
+    main .moldura-01::before, main .moldura-01::after,
+    main::before, main::after,
+    main .principal::before, main .principal::after{
         display: none;
     }
 
@@ -15,38 +12,23 @@
 
 
 @media (max-width: 1280px){
-    main::before, 
-    main::after, 
-    .principal::before,
-    .principal::after,
-    .conteiner::after, 
-    .conteiner::before, 
-    .ganhos .box-01::before,
-    .ganhos .box-01::after,
-    .sobre::before,
-    .sobre::after,
-    .version::after,
-    .version::before,
-    .etapas::after,
-    .etapas::before,
-    .etapas .position::after,
-    .etapas .position::before,
-    .destaque::after,
-    .destaque::before,
-    .investimento::after,
-    .investimento::before,
-    .dec::before,
-    .depoimentos::before,
-    .depoimentos::after,
-    .feedback::after,
-    .feedback::before,
-    .you-video::before,
-    .you-video::after,
+    main::before, main::after, 
+    .principal::before, .principal::after,
+    .conteiner::after, .conteiner::before, 
+    .ganhos .box-01::before, .ganhos .box-01::after,
+    .sobre::before, .sobre::after,
+    .version::after, .version::before,
+    .etapas::after, .etapas::before,
+    .etapas .position::after, .etapas .position::before,
+    .destaque::after, .destaque::before,
+    .investimento::after, .investimento::before,
+    .dec::before, 
+    .depoimentos::before, .depoimentos::after,
+    .feedback::after, .feedback::before,
+    .you-video::before, .you-video::after,
     .ganhos .box-02::before,
-    .passages .section::after,
-    .passages .section::before,
-    .investimento .conteiner .money::after,
-    .investimento .conteiner .money::before,
+    .passages .section::after, .passages .section::before,
+    .investimento .conteiner .money::after, .investimento .conteiner .money::before,
     main .investimento .dec::after,
     main .moldura-02::before {
         display: none;
@@ -86,8 +68,34 @@
         display: block;
     }
 
+    .type-book{
+        padding-left: 20px;
+    }
+
+    .versions .position .ancora{
+        padding-right: 20px;
+    }
+
     .passages .section{
         margin-right: auto;
+    }
+
+    .etapas ol li::before{
+        left: 80px;
+        top: -80px;
+    }
+
+    .etapas ol li::after{
+        top: -78px;
+        left: 88px;
+    }
+
+    .etapas #subs a{
+        left: 30px;
+    }
+
+    .etapas ol li#subs::before{
+        top: -108px;
     }
 
     .passages ul li{
@@ -170,6 +178,7 @@
     main .principal .txt-principal .txt-01 span{
         margin: 0;
         display: block;
+        padding: 0 20px;
     }
 
     main .principal .txt-principal a{
@@ -188,6 +197,8 @@
         width: 300px;
         left: -3em;
     }
+
+    
 
     main .sobre .sbr-position-01{
         display: block;

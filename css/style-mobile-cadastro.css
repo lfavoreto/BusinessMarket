@@ -40,6 +40,11 @@
 }
 
 @media(max-width: 740px){
+
+    main .bg-principal{
+        padding-top: 80px;
+    }
+
     main .ficha-cadastro{
         width: 100%;
         border-radius: 0;
@@ -59,7 +64,12 @@
     }
 
     main form input[type=submit].subm{
-        margin: 50px auto;
+        margin: 40px auto 0;
+    }
+
+    main form fieldset input[type=submit], main fieldset a, main #etapa03 a{
+        margin: 40px auto 0;
+        width: 100%;
     }
 
     main ul li.selected div::after, main ul li.selected div::before,
@@ -72,8 +82,17 @@
         padding-bottom: 130px;
     }
 
+    footer{
+        margin-top: 0;
+        height: 110px;
+    }
+
+    footer img{
+        margin-top: 50px;
+    }
+
     .modal-content{
-        width: 280px;
+        width: 320px;
     }
 
     .modal ul li span{
@@ -83,8 +102,23 @@
     .modal .conteiner{
         width: 95%;
     }
+
     .modal h2{
         margin-top: 90px;
         font-size: 15px;
+    }
+}
+
+@media(max-width: 280px){
+    .modal-content{
+        width: 250px;
+    }
+
+    .modal .botao input{
+        padding: 20px;
+    }
+
+    main #etapa03 .botao{
+        padding-bottom: 80px;
     }
 }
