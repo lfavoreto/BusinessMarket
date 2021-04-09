@@ -12,7 +12,6 @@
 
         <link href="css/fonts.css" rel="stylesheet">
         <link href="css/reset.css" rel="stylesheet">
-        <link href="css/style-modal.css" rel="stylesheet">
         <link href="css/style-cadastro.css" rel="stylesheet">
         <link href="css/style-mobile-cadastro.css" rel="stylesheet">
 
@@ -37,10 +36,10 @@
                     <div class="conteiner">
                         <div class="cad">
                             <div class="position">
-                                <form action="envioformulario.html" method="POST" class="ficha-cadastro" id="formulario">
+                                <form action="conf-envio.html" method="POST" class="ficha-cadastro" id="formulario">
                                     <fieldset id="etapa01">
                                         <ul>
-                                            <li class="selected no-dotted-left"><div>✓</div></li>
+                                            <li class="selected no-dotted-left first-selected"><div>✓</div></li>
                                             <li><div>.02</div></li>
                                             <li class="no-dotted-right"><div>.03</div></li>
                                         </ul>
@@ -64,7 +63,7 @@
 
                                     <fieldset id="etapa02">
                                         <ul>
-                                            <li class="selected no-dotted-left"><div>✓</div></li>
+                                            <li class="selected no-dotted-left first-selected"><div>✓</div></li>
                                             <li class="selected"><div>✓</div></li>
                                             <li class="no-dotted-right"><div>.03</div></li>
                                         </ul>
@@ -82,32 +81,10 @@
                                             
                                             <div class="botao">
                                                 <input type="submit" class="prev acao" value="Voltar" onclick="return false;" id="voltar">
-                                                <input type="submit" name="enviar" value="Enviar" class="subm" onclick="apear(); return false;" id="enviar">
+                                                <input type="submit" name="enviar" value="Enviar" class="subm" id="enviar">
                                             </div>
                                         </div>
                                     </fieldset>
-
-                                    <div id="myModal" class="modal">
-                                        <div class="modal-content">
-                                          <span class="close">&times;</span>
-                                          <div class="lsg">
-                                            <img src="img/logo.png" alt="Logo da empresa Business Market">
-                                          </div>
-                                          <div class="conteiner">
-                                            <div class="principal">
-                                                <h2>Não saia ainda! Preparamos um presente especial para você.</h2>
-                                                <ul>
-                                                    <li>Seu Nome: <span id="no"></span></li>
-                                                    <li>Telefone: <span id="te"></span></li>
-                                                    <li>CPF: <span id="cp"></span></li>
-                                                </ul>
-                                                <div class="botao">
-                                                    <input type="submit" onclick="return true" value="Concluir Inscrição">
-                                                </div>
-                                            </div>
-                                          </div>
-                                        </div>  
-                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -120,7 +97,6 @@
                 </div>
             </footer>
         </div>
-        <script text="text/javascript" src="js/cadastro.js"></script>
-        <script text="text/javascript" src="js/modal.js"></script>
+        <script src="js/cadastro.js"></script>
     </body>
 </html>

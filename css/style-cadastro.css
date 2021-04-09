@@ -250,7 +250,7 @@ main fieldset ul li.selected, main #etapa03 ul li.selected{
     font-weight: bold;
 }
 
-main fieldset ul li.selected div::before, main #etapa03 ul li.selected div::before{
+main fieldset ul li.first-selected div::before, main #etapa03 ul li.first-selected div::before{
     content: '';
     border: solid 1px #19708180;
     border-radius: 27px;
@@ -263,7 +263,7 @@ main fieldset ul li.selected div::before, main #etapa03 ul li.selected div::befo
     transform: rotate(45deg);
 }
 
-main fieldset ul li.selected div::after, main #etapa03 ul li.selected div::after{
+main fieldset ul li.first-selected div::after, main #etapa03 ul li.first-selected div::after{
     content: '';
     border: solid 1px #19708180;
     border-radius: 27px;
@@ -352,6 +352,16 @@ main form fieldset input[type=submit]:hover, main #etapa03 a:hover{
     border: 1px solid #C2FF01;
     color: white;
     transition: 0.5s;
+}
+
+main #etapa03 h1{
+    font-size: 20px;
+}
+
+main #etapa03 h2{
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
 main #etapa03 .botao{

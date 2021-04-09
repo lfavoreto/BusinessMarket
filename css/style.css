@@ -188,7 +188,7 @@ main .moldura-02::after{
     position: absolute;
     left: 80px;
     top: 20px;
-    z-index: 4;
+    z-index: 3;
 }
 
 main .principal .cut img{
@@ -1725,6 +1725,7 @@ main .depoimentos .position::before{
 .depoimentos .box-01 .videos{
     position: relative;
     margin-bottom: 40px;
+    display: inline-block;
 }
 
 .depoimentos .box-01 .videos span{
@@ -1737,8 +1738,9 @@ main .depoimentos .position::before{
     border-radius: 50%;
     position: absolute;
     top: 45px;
-    left: 130px;
-    z-index: 99;
+    left: 50%;
+    margin-left: -20px;
+    z-index: 3;
     cursor: pointer;
 }
 

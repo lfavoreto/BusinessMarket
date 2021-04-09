@@ -15,9 +15,13 @@
         <link href="css/style-header.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/style-footer.css" rel="stylesheet">
+        <link href="css/style-modal.css" rel="stylesheet">
         <link href="css/style-mobile.css" rel="stylesheet">
 
         <link rel="icon" href="img/logo2.png">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
     </head>
     <body>
         <header>
@@ -632,6 +636,37 @@
             </div>
         </footer>
 
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="lsg">
+                <img src="img/logo.png" alt="Logo da empresa Business Market">
+              </div>
+              <div class="conteiner">
+                <div class="principal">
+                    <h2>Não saia ainda! Preparamos um presente especial para você.</h2>
+
+                    <form action="" method="POST" id="modal-form">
+                        <label for="name">Seu Nome:</label>
+                        <input type="text" name="name" id="name" size="30" autocomplete="off" required>
+                        <br>
+                        <label for="tel">Telefone:</label>
+                        <input type="text" name="tel" id="tel" size="30" autocomplete="off" required>
+                        <br>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf" size="30" autocomplete="off" required>
+
+                        <div class="modal-botao">
+                            <input type="submit" value="Concluir Inscrição">
+                        </div>
+                    </form>
+
+                </div>
+              </div>
+            </div>  
+        </div>
+
         <script src="js/main.js"></script>
+        <script src="js/modal.js"></script>
     </body>
 </html>

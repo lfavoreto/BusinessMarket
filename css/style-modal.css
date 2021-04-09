@@ -16,12 +16,13 @@
   .modal-content {
     background: linear-gradient(220.36deg, rgba(25, 112, 129, 0.32) 0%, rgba(247, 247, 249, 0) 44.63%);
     background-color: white;
-    margin: 2% auto; 
+    margin: 110px auto; 
     border: 1px solid #888;
     padding: 120px 10px;
     width: 1092px;
     position: relative;
     overflow: hidden;
+    z-index: 99;
   }
 
   .modal-content::after{
@@ -93,23 +94,30 @@
     letter-spacing: 4px;
 }
 
-.modal ul{
-    margin: 80px 20px 0;
+#modal-form{
+    margin: 40px 20px 0;
 }
 
-.modal ul li{
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-family: "Source Sans Pro";
-    margin-top: 40px;
+#modal-form input[type=text]{
+  margin-top: 40px;
+  border: none;
+	background: none;
+  border-bottom: 1px solid #eee;
+  padding: 5px 5px;
 }
 
-.modal ul li span{
-    font-family: 'Fira Sans', sans-serif;
-    text-transform: none;
-    font-weight: normal;
+#modal-form input:focus{
+	outline: 0;
+}
+
+#modal-form label{
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Source Sans Pro";
+  display: inline-block;
+  width: 20%;
 }
 
 .modal .lsg{
@@ -147,11 +155,12 @@
     transform: rotate(-45deg);
 }
 
-.modal .botao{
-    margin-top: 80px;
+.modal .modal-botao{
+    margin-top: 60px;
+    text-align: center;
 }
 
-.modal .botao input{
+.modal .modal-botao input{
     display: inline-block;
     margin: 0 auto;
     background: linear-gradient(0deg, #1D737E -74.42%, #4FB9C7 154.17%);
@@ -165,4 +174,5 @@
     cursor: pointer;
     display: inline;
     text-align: center;
+    margin-top: 0;
 }

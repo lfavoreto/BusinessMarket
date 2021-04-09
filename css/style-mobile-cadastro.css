@@ -5,33 +5,6 @@
     }
 }
 
-@media(max-width: 1188px){
-    .modal-content{
-        width: 650px;
-    }
-
-    .modal-content::after, .modal-content::before,
-    .modal .conteiner::after,
-    .modal .conteiner::before{
-        display: none;
-    }
-
-    .modal img{
-        width: 60px;
-        left: 70%;
-        top: 75%;
-    }
-
-    .modal .lsg{
-        width: 200px;
-        height: 200px;
-        left: -60px;
-        top: -30px;
-        border-radius: 37px;
-
-    }
-}
-
 @media(max-width: 940px){
     form::before, form::after,
     .cad::before{
@@ -78,7 +51,7 @@
     }
 
     main #etapa03 .botao{
-        margin-top: 60px;
+        margin-top: 220px;
         padding-bottom: 130px;
     }
 
@@ -91,32 +64,9 @@
         margin-top: 50px;
     }
 
-    .modal-content{
-        width: 320px;
-    }
-
-    .modal ul li span{
-        display: block;
-    }
-
-    .modal .conteiner{
-        width: 95%;
-    }
-
-    .modal h2{
-        margin-top: 90px;
-        font-size: 15px;
-    }
 }
 
 @media(max-width: 280px){
-    .modal-content{
-        width: 250px;
-    }
-
-    .modal .botao input{
-        padding: 20px;
-    }
 
     main #etapa03 .botao{
         padding-bottom: 80px;

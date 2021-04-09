@@ -8,9 +8,13 @@
     main .principal .image-position{
         right: 4%;
     }
+
 }
-
-
+@media(max-width: 1494px) and (min-width: 880px){
+    main .bg-principal{
+        padding-top: 300px;
+    }
+}
 @media (max-width: 1280px){
     main::before, main::after, 
     .principal::before, .principal::after,
@@ -34,7 +38,7 @@
         display: none;
     }
 }
-@media (max-width: 1024px) and (min-width: 880px){
+@media (max-width: 1195px) and (min-width: 880px){
 
     main .conteiner{
         max-width: 975px;
@@ -62,6 +66,18 @@
 
     main .sobre .txt-principal p{
         margin-left: 20px;
+    }
+
+    main .sobre .sbr-position-01{
+        padding: 10px;
+    }
+
+    .sobre .rede-social{
+        text-align: center;
+    }
+
+    .sobre .rede-social a{
+        margin: 20px;
     }
 
     main .principal .txt-principal .txt-01 span{
@@ -198,18 +214,12 @@
         left: -3em;
     }
 
-    
-
     main .sobre .sbr-position-01{
         display: block;
     }
 
     main .sobre .image-position::before{
-        width: 150px;
-        height: 150px;
-        left: 0;
-        top: 00px;
-        border-radius: 30px;
+        display: none;
     }
 
     main .sobre .txt-principal p{
@@ -223,6 +233,10 @@
     .sobre .rede-social{
         padding-left: 0;
         text-align: center;
+    }
+
+    .sobre .rede-social a{
+        margin: 20px;
     }
 
     .type-book .conteiner{
@@ -247,6 +261,15 @@
 
     .specbook .txt-01{
         margin-right: 0;
+    }
+
+    .ganhos .box-01 .conteiner{
+        margin-right: auto;
+    }
+
+    .ganhos .position .box-01, .ganhos .position .box-02{
+        height: auto;
+        padding-bottom: 140px;
     }
 
     .ganhos .position{
@@ -300,7 +323,9 @@
     }
 
     .versions{
-        padding-top: 1px;
+        padding: 20px;
+        padding-bottom: 80px;
+        height: auto;
     }
 
     .versions .position .txt h2{
@@ -330,6 +355,10 @@
         margin-top: 150px;
     }
 
+    .etapas #subs{
+        display: block;
+    }
+
     .etapas ol li::after{
         right: 50%;
     }
@@ -338,8 +367,12 @@
         right: 47%;
     }
 
-    .etapas #subs{
-        margin-left: 10%;
+    .etapas #subs a{
+        position: static;
+    }
+
+    .etapas ol li#subs::before{
+        display: none;
     }
 
     .etapas .link{
@@ -359,9 +392,14 @@
         padding-bottom: 40px;
     }
 
+    .publ .box-01 .conteiner{
+        margin-right: auto;
+        padding-bottom: 80px;
+    }
     .publ .box-02 .conteiner{
         padding-left: 0;
         padding: 1px;
+        margin-left: auto;
     }
 
     .publ .box-01 .continuacao{
@@ -490,6 +528,10 @@
         margin-left: 0;
     }
 
+    .depoimentos .box-02 ul li.desnivel{
+        margin-top: 0;
+    }
+
     .depoimentos .box-02 img#logo02, .depoimentos .box-02 img#logo05{
         margin-left: auto;
     }
@@ -546,10 +588,34 @@
         margin-top: 30px;
     }
 
+}
+
+@media (max-width: 880px) and (min-width: 352px){
     
+    main .bg-principal{
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    main .sobre .cut{
+        width: 320px;
+        height: 400px;
+    }
+
+    main .sobre .cut img{
+        width: 430px;
+    }
+
+    main .sobre .image-position::before{
+        display: none;
+    }
 }
 
 @media (max-width: 280px){
+
+    main .principal .txt-principal a{
+        margin-top: 20px;
+    }
 
     .passages ul li::before, .passages ul li::after{
         left: 28%;
