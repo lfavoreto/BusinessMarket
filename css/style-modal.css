@@ -176,3 +176,100 @@
     text-align: center;
     margin-top: 0;
 }
+
+@media(max-width: 1280px){
+  .modal-content::before, .modal-content::after{
+    display: none;
+  }
+
+  .modal-content{
+    width: 800px;
+  }
+
+  .modal .conteiner::before{
+    display: block;
+  }
+
+  .modal .conteiner{
+    margin: 0 0 0 auto;
+    width: 60%;
+    padding-right: 30px;
+  }
+}
+
+@media(max-width: 880px){
+  .modal .conteiner::before{
+    display: none;
+  }
+
+  .modal-content{
+    width: 600px;
+    padding-top: 150px;
+  }
+
+  .modal .conteiner{
+    max-width: 500px;
+    width: 80%;
+    padding-right: 10px;
+  }
+
+  .modal img {
+    width: 80px;
+    left: 85%;
+    top: 60%;
+  }
+
+  .modal .lsg{
+    top: -250px;
+  }
+  
+}
+
+@media(max-width: 700px){
+  .modal-content{
+    width: 230px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .modal .conteiner{
+    margin: 0 auto;
+    padding-right: 0;
+  }
+
+  .modal .lsg{
+    top: -350px;
+  }
+
+  .modal img {
+    width: 50px;
+    left: 95%;
+    top: 80%;
+  }
+
+  .modal h2{
+    padding-left: 0;
+  }
+
+  #modal-form label{
+    width: 100%;
+  }
+
+  #modal-form{
+    margin-left: 0;
+  }
+
+  #modal-form input[type=text]{
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .modal .modal-botao{
+    margin-top: 0;
+  }
+
+  .modal .modal-botao input{
+    padding: 20px 10px;
+  }
+}

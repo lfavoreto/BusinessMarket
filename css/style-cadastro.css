@@ -1,44 +1,11 @@
-main{
-    overflow: hidden;
+main, .body-conteiner{
     position: relative;
+    overflow: hidden;
 }
 
 .conteiner{
-    max-width: 1100px;
     margin: 0 auto;
-}
-
-.body-conteiner{
-    overflow: hidden;
-    position: relative;
-}
-
-.body-conteiner::after{
-    content: '';
-    border: solid 1px #197081;
-    border-radius: 57px;
-    height: 450px;
-    position: absolute;
-    left: -220px;
-    bottom: 110px;
-    opacity: 0.4;
-    width: 450px;
-    transform: rotate(45deg);
-    z-index: 2;
-}
-
-.body-conteiner::before{
-    content: '';
-    border: solid 1px #197081;
-    border-radius: 57px;
-    height: 450px;
-    position: absolute;
-    left: -220px;
-    bottom: -10px;
-    opacity: 0.4;
-    width: 450px;
-    transform: rotate(45deg);
-    z-index: 2;
+    max-width: 1100px;
 }
 
 header, header .h-pos{
@@ -47,55 +14,49 @@ header, header .h-pos{
 
 header .conteiner{
     max-width: 1920px;
-    margin: 0 auto;
 }
 
 header .lsg{
     background: linear-gradient(99.95deg, #1D737E -2.54%, #4FB9C7 114.45%);
     border-radius: 40px;
+    height: 425px;
+    margin-left: -212px;
+    position: absolute;
+    left: 50%;
+    top: -14em;
     transform: rotate(45deg);
     width: 425px;
-    height: 425px;
-    position: absolute;
-    top: -14em;
-    left: 50%;
-    margin-left: -212px;
     z-index: 2;
 }
 
 header .lsg img{
-    width: 120px;
-    transform: rotate(-45deg);
-    margin-top: 220px;
-    margin-left: 250px;
     cursor: pointer;
+    margin-left: 250px;
+    margin-top: 220px;
+    transform: rotate(-45deg);
+    width: 120px;
 }
 
-main::after{
-    content: '';
+.body-conteiner::after, .body-conteiner::before, main::after, main::before{
     border: solid 1px #197081;
     border-radius: 57px;
+    content: '';
     height: 450px;
     position: absolute;
-    right: -220px;
-    top: 70px;
     opacity: 0.4;
-    width: 450px;
     transform: rotate(45deg);
+    width: 450px;
+    z-index: 2;
 }
 
-main::before{
-    content: '';
-    border: solid 1px #197081;
-    border-radius: 57px;
-    height: 450px;
-    position: absolute;
-    right: -220px;
-    top: -50px;
-    opacity: 0.4;
-    width: 450px;
-    transform: rotate(45deg);
-}
+.body-conteiner::after, .body-conteiner::before{ left: -220px; }
+.body-conteiner::after{  bottom: 110px; }
+.body-conteiner::before{ bottom: -10px; }
+
+main::after, main::before{ right: -220px; }
+main::after{ top: 70px; }
+main::before{  top: -50px; }
+
 
 main .bg-principal{
     background: linear-gradient(220.36deg, rgba(25, 112, 129, 0.32) 0%, rgba(247, 247, 249, 0) 44.63%);
@@ -107,14 +68,14 @@ main .ficha-cadastro{
     background: linear-gradient(180deg, #171717 41.46%, rgba(23, 23, 23, 0) 100%);
     background-color: black;
     border-radius: 55px;
-    text-align: center;
     color: white;
-    padding-top: 280px;
-    width: 80%;
     height: 800px;
     margin: 0 auto;
+    padding-top: 280px;
     position: relative;
     overflow: hidden;
+    text-align: center;
+    width: 80%;
 }
 
 main .position, main .cad{
@@ -122,179 +83,152 @@ main .position, main .cad{
     position: relative;
 }
 
-main .position::after{
-    content: '';
+
+main .position::after, main .position::before{
     background-color:#C2FF01;
-    height: 300px;
+    content: '';
     position: absolute;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+main .position::after{
+    border-radius: 57px;
+    height: 300px;
     left: -45px;
     top: 280px;
     width: 300px;
-    transform: rotate(45deg);
-    border-radius: 57px;
-    z-index: -1;
 }
-
 main .position::before{
-    content: '';
-    background-color:#C2FF01;
+    border-radius: 37px;
     height: 130px;
-    position: absolute;
     left: -90px;
     top: 150px;
     width: 130px;
-    transform: rotate(45deg);
-    border-radius: 37px;
-    z-index: -1;
 }
 
-main .ficha-cadastro::before{
-    content: '';
+
+main .ficha-cadastro::before, main .ficha-cadastro::after{
     border: solid 1px #19708180;
     border-radius: 57px;
+    content: '';
     height: 450px;
     position: absolute;
     right: -400px;
-    bottom: -90px;
     opacity: 0.4;
-    width: 450px;
     transform: rotate(45deg);
+    width: 450px;
 }
+main .ficha-cadastro::before{ bottom: -90px; }
+main .ficha-cadastro::after{ bottom: 90px; }
 
-main .ficha-cadastro::after{
-    content: '';
-    border: solid 1px #19708180;
-    border-radius: 57px;
-    height: 450px;
-    position: absolute;
-    right: -400px;
-    bottom: 90px;
-    opacity: 0.4;
-    width: 450px;
-    transform: rotate(45deg);
-}
 
 main .cad::before{
-    content: '';
     background-color:#C2FF01;
+    border-radius: 37px;
+    content: '';
     height: 130px;
     position: absolute;
-    right: 45px;
     bottom: 70px;
-    width: 130px;
+    right: 45px;
     transform: rotate(45deg);
-    border-radius: 37px;
+    width: 130px;
     z-index: 2;
 }
 
 main .ficha-cadastro fieldset, main #etapa03{
-    width: 60%;
     margin: 0 auto;
+    width: 60%;
 }
 
 main .ficha-cadastro fieldset:not(:first-of-type){
     display: none;
 }
 
-main fieldset ul, main #etapa03 ul{
+main ul{
     display: flex;
     justify-content: space-between;
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
 }
 
-main fieldset ul li, main #etapa03 ul li{
-    display: inline-block;
-    font-size: 13px;
+main ul li{
     border: 2px solid #C2FF01;
     border-radius: 15px;
-    width: 45px;
-    height: 45px;
-    transform: rotate(45deg);
-    position: relative;
+    display: inline-block;
     font-family: "Source Sans Pro", sans-serif;
+    font-size: 13px;
+    height: 45px;
+    position: relative;
+    transform: rotate(45deg);
+    width: 45px;
 }
 
-main fieldset ul li::after, main fieldset ul li::before, main #etapa03 ul li::after, main #etapa03 ul li::before{
+main ul li::after, main ul li::before{
     content: url(../img/icons/dotted.png);
     position: absolute;
     transform: rotate(-45deg);
 }
 
-main fieldset ul li::after, main #etapa03 ul li::after{
+main ul li::after{
     bottom: -28px;
     right: 38px;
 }
 
-main fieldset ul li::before, main #etapa03 ul li::before{
+main ul li::before{
     bottom: 55px;
     left: 35px;
 }
 
-main .no-dotted-left::after, main .no-dotted-right::before,
-main #etapa03 .no-dotted-left::after, main #etapa03 .no-dotted-right::before{
+main .no-dotted-left::after, main .no-dotted-right::before{
     content: none;
 }
 
-main fieldset ul li div, main #etapa03 ul li div{
-    transform: rotate(-45deg);
+main ul li div{
     position: absolute;
     left: 13px;
     top: 15px;
+    transform: rotate(-45deg);
 }
 
-main fieldset ul li.selected, main #etapa03 ul li.selected{
+main ul li.selected{
     background-color: #C2FF01;
     color: black;
     font-size: 28px;
     font-weight: bold;
 }
 
-main fieldset ul li.first-selected div::before, main #etapa03 ul li.first-selected div::before{
+
+li.first-selected div::before, li.first-selected div::after{
     content: '';
     border: solid 1px #19708180;
     border-radius: 27px;
     height: 100px;
     position: absolute;
-    left: -50px;
     top: -30px;
     opacity: 0.4;
     width: 100px;
     transform: rotate(45deg);
 }
+li.first-selected div::before{ left: -50px; }
+li.first-selected div::after{ left: -30px; }
 
-main fieldset ul li.first-selected div::after, main #etapa03 ul li.first-selected div::after{
-    content: '';
-    border: solid 1px #19708180;
-    border-radius: 27px;
-    height: 100px;
-    position: absolute;
-    left: -30px;
-    top: -30px;
-    opacity: 0.4;
-    width: 100px;
-    transform: rotate(45deg);
-}
 
-main fieldset ul li.selected div, main #etapa03 ul li.selected div{
+li.selected div{
     left: 11px;
     top: 5px;
 }
 
 main h1{
     font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    size: 25px;
-    margin-top: 100px;
-}
-
-main h1 span{
+    font-size: 25px;
     font-weight: lighter;
+    margin-top: 100px;
+    text-transform: uppercase;
 }
 
 main form .cont{
-    width: 75%;
     margin: 50px auto;
+    width: 75%;
 }
 
 main form label, main form input{
@@ -303,22 +237,22 @@ main form label, main form input{
 }
 
 main form label{
-    text-transform: uppercase;
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: bold;
     font-size: 13px;
+    font-weight: bold;
     margin-top: 40px;
+    text-transform: uppercase;
 }
 
 main form fieldset input{
-    width: 100%;
+    background: none;
     border: none;
 	border-bottom: 2px solid #C2FF01;
     border-radius: 2px;
-	background: none;
     color: white;
     padding: 15px 0;
     font-size: 13px;
+    width: 100%;
 }
 
 main form input:focus{
@@ -326,28 +260,27 @@ main form input:focus{
 }
 
 form .botao{
-    margin: 0 auto;
     display: flex;
+    margin: 0 auto;
 }
 
-main form fieldset input[type=submit], main fieldset a, main #etapa03 a{
+main form fieldset input[type=submit], main a{
     background-color: #C2FF01;
     border: 1px solid transparent;
     border-radius: 57px;
-    width: 200px;
     color: black;
-    font-weight: bold;
-    font-size: 15px;
-    text-transform: uppercase;
-    padding: 20px 10px;
-    margin: 80px auto 0 auto;
     cursor: pointer;
     display: inline;
-    width: 170px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 80px auto 0 auto;
+    padding: 20px 10px;
     text-align: center;
+    text-transform: uppercase;
+    width: 170px;
 }
 
-main form fieldset input[type=submit]:hover, main #etapa03 a:hover{
+main form input[type=submit]:hover{
     background-color: transparent;
     border: 1px solid #C2FF01;
     color: white;
@@ -359,8 +292,8 @@ main #etapa03 h1{
 }
 
 main #etapa03 h2{
-    font-size: 32px;
     font-family: 'Oswald', sans-serif;
+    font-size: 32px;
     text-transform: uppercase;
 }
 
@@ -378,17 +311,17 @@ main .fc03{
 
 footer {
     background-color: black;
-    margin-top: 60px;
     height: 220px;
-    text-align: right;
-    position: relative;
+    margin-top: 60px;
     padding: 10px;
+    position: relative;
+    text-align: right;
 }
 
 footer span{
     color: white;
-    font-weight: lighter;
     font-size: 13px;
+    font-weight: lighter;
 }
 
 footer img{

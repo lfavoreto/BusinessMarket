@@ -4,14 +4,14 @@ footer{
 }
 
 footer .conteiner{
-    max-width: 1100px;
     margin: 0 auto;
+    max-width: 1100px;
 }
 
 footer .position{
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 footer img{

@@ -7,8 +7,8 @@ main{
 /*PRINCIPAL*/
 
 main .conteiner{
-    max-width: 1100px;
     margin: 0 auto;
+    max-width: 1100px;
 }
 
 main .bg-principal{
@@ -19,8 +19,8 @@ main .bg-principal{
 }
 
 main .principal .position-int{
-    max-width: 1920px;
     margin: 0 auto;
+    max-width: 1920px;
     position: relative;
 }
 
@@ -30,37 +30,37 @@ main .m-position-01{
 
 /*LOSANGO*/
 main::before, main::after{              
-    content: '';
     border: solid 1px #197081;
     border-radius: 57px;
+    content: '';
     height: 450px;
     position: absolute;
     left: -250px;
     opacity: 0.4;
-    width: 450px;
     transform: rotate(45deg);
+    width: 450px;
 }                                       
 main::before{ top: 400px; }
 main::after{ top: 520px; }
 
 main .principal::before, main .principal::after{
-    content: '';
     border: none;
     border-radius: 2em;
+    content: '';
     height: 130px;
-    width: 130px;
     position: absolute;
     transform: rotate(45deg);
+    width: 130px;
 }
 main .principal::before{
     background-color: #C2FF01;
-     left: 90px;
-     top: 705px;
+    left: 90px;
+    top: 705px;
 }
 main .principal::after{
     background: linear-gradient(25deg, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%);
-     left: -20px;
-     top: 800px;
+    left: -20px;
+    top: 800px;
 }                                       
 /*********/
 
@@ -73,10 +73,9 @@ main .principal .txt-principal .txt-01{
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 2px;
-    text-transform: uppercase;
     line-height: 1.6em;
     max-width: 530px;
-    
+    text-transform: uppercase;
 }
 
 main .principal .txt-principal .txt-01 span{
@@ -94,7 +93,6 @@ main .principal .txt-principal .txt-02{
     line-height: 27px;
     margin-top: 50px;
     max-width: 510px;
-    
 }
 
 main .principal .txt-principal a{
@@ -122,18 +120,18 @@ main .principal .txt-principal a:hover{
 
 main .principal .image-position{
     position: absolute;
-    top: 70px;
     right: 240px;
+    top: 70px;
 }
 
 main .principal .cut{
     background-color: white;
     border-radius: 57px;
-    width: 480px;
     height: 480px;
+    position: relative;
     overflow: hidden;
     transform: rotate(45deg);
-    position: relative;
+    width: 480px;
     z-index: 2;
 }
 
@@ -141,69 +139,63 @@ main .moldura-01, main .moldura-02{
     position: relative;
 }
 
-main .moldura-01::before{
-    content: '';
-    background: linear-gradient(250deg, #FFFFFF 8%, rgba(255, 255, 255, 0) 100%);
+
+main .moldura-01::before, main .moldura-01::after{
     border-radius: 57px;
-    width: 745px;
-    height: 745px;
-    transform: rotate(45deg);
+    content: '';
     position: absolute;
+    transform: rotate(45deg);
+}
+main .moldura-01::before{
+    background: linear-gradient(250deg, #FFFFFF 8%, rgba(255, 255, 255, 0) 100%);
+    height: 745px;
     right: -150px;
     top: -60px;
+    width: 745px;
 }
-
 main .moldura-01::after{
-    content: '';
     background: #FFF;
-    border-radius: 57px;
-    width: 250px;
     height: 250px;
-    transform: rotate(45deg);
-    position: absolute;
     left: -100px;
     top: -10px;
+    width: 250px;
 }
 
-main .moldura-02::before{
-    content: '';
-    background: linear-gradient(150deg, #197081, #FFF);
+
+main .moldura-02::before, main .moldura-02::after{
     border-radius: 57px;
-    width: 480px;
+    content: '';
     height: 480px;
-    transform: rotate(45deg);
     position: absolute;
-    right: 90px;
+    transform: rotate(45deg);
     top: 20px;
+    width: 480px;
+}
+main .moldura-02::before{
+    background: linear-gradient(150deg, #197081, #FFF);
+    right: 90px;
     z-index: 2;
 }
-
 main .moldura-02::after{
-    content: '';
     border: 1px solid #C2FF01;
-    border-radius: 57px;
-    width: 480px;
-    height: 480px;
-    transform: rotate(45deg);
-    position: absolute;
     left: 80px;
-    top: 20px;
     z-index: 3;
 }
 
+
 main .principal .cut img{
-    width: 1200px;
-    transform: rotate(-45deg);
     position: absolute;
-    top: -140px;
     right: -260px;
+    top: -140px;
+    transform: rotate(-45deg);
+    width: 1200px;
 }
 
 /*SOBRE*/
 main .sobre{
-    overflow: hidden;
     padding-top: 20px;
     position: relative;
+    overflow: hidden;
 }
 
 main .sobre>.conteiner{
@@ -211,16 +203,16 @@ main .sobre>.conteiner{
 }
 
 main .sobre h2{
+    color: #F7F7F9;
     font-family: "Uni Sans", sans-serif;
     font-size: 63px;
-    color: #F7F7F9;
     letter-spacing: 50px;
     position: absolute;
-    top: 40px;
     left: -300px;
+    top: 40px;
     text-orientation: upright;
-    writing-mode: vertical-rl;
     text-transform: uppercase;
+    writing-mode: vertical-rl;
 }
 
 main .sobre .sbr-position-01{
@@ -228,15 +220,15 @@ main .sobre .sbr-position-01{
 }
 
 main .sobre .image-position::before{
-    content: '';
     background-color:#C2FF01;
+    border-radius: 57px;
+    content: '';
     height: 300px;
     position: absolute;
     left: -160px;
     top: 20px;
-    width: 300px;
     transform: rotate(45deg);
-    border-radius: 57px;
+    width: 300px;
 }
 
 main .sobre .cut{
@@ -254,8 +246,8 @@ main .sobre .cut img{
 }
 
 main .sobre .txt-principal p{
-    margin-top: 30px;
     margin-left: 80px;
+    margin-top: 30px;
 }
 
 main .sobre .txt-principal .txt-01, .sobre .txt-principal .txt-02{
@@ -291,22 +283,22 @@ main .sobre .txt-principal .txt-04 strong{
 }
 
 main .sobre::before, main .sobre::after{
-    content: '';
     border: solid 1px #197081;
     border-radius: 57px;
+    content: '';
     height: 450px;
     position: absolute;
     right: -400px;
-    width: 450px;
     transform: rotate(45deg);
+    width: 450px;
 }
 main .sobre::before{
     bottom: 400px;
     opacity: 0.4;
 }
 main .sobre::after{
-    top: 20px;
     opacity: 0.4;
+    top: 20px;
 }
 
 .sobre .rede-social{
@@ -339,10 +331,10 @@ main .sobre::after{
 
 /*TYPEBOOK*/
 .type-book{
+    background-color: #0c0c0f;
     background-image: url(../img/background.png);
     background-position: 65% 13%;
     background-repeat: no-repeat;
-    background-color: #0c0c0f;
     padding-bottom: 130px;
     padding-top: 130px;
     position: relative;
@@ -354,18 +346,17 @@ main .sobre::after{
 }
 
 .type-book ul::before{
-    content: '';
-    display: inline-block;
     background: url(../img/logo.png);
     background-size: 179px;
     border: 1px solid #000;
-    width: 179px;
+    content: '';
+    display: inline-block;
     height: 210px;
     position: absolute;
     left: -220px;
     top: 0;
+    width: 179px;
 }
-
 
 .type-book ul{
     color: white;
@@ -395,17 +386,17 @@ main .sobre::after{
     border-radius: 34px;
     content: '';
     height: 130px;
-    width: 130px;
     position: absolute;
-    right: -320px;
     bottom: 200px;
+    right: -320px;
     transform: rotate(45deg);
+    width: 130px;
 }
 
 /*SPECBOOK*/
 .specbook{
-    margin-top: 100px;
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .specbook .conteiner{
@@ -417,37 +408,37 @@ main .sobre::after{
 }
 
 .specbook .txt-01{
-    font-family: "Fira Sans", sans-serif;
     flex: 2;
+    font-family: "Fira Sans", sans-serif;
     margin-right: 60px;
 }
 .specbook .txt-01 span{
-    margin-top: 30px;
     display: block;
     font-weight: bold;
+    margin-top: 30px;
 }
 
 .specbook .txt-02{
-    font-family: "Oswald", sans-serif;
-    font-weight: bold;
-    font-size: 25px;
     flex: 1;
-    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
     letter-spacing: 4px;
     line-height: 40px;
-    text-align: end;
-    position: relative;
     margin-top: 25px;
+    position: relative;
+    text-align: end;
+    text-transform: uppercase;
 }
 
 .specbook .txt-02::after{
-    content: '';
     background-image: url(../img/icons/icon01.png);
-    width: 157px;
+    content: '';
     height: 154px;
+    margin-left: 50px;
     position: absolute;
     top: -20px;
-    margin-left: 50px;
+    width: 157px;
 }
 
 /*GANHOS*/
@@ -455,15 +446,9 @@ main .sobre::after{
     display: flex;
 }
 
-.ganhos .box-01 .conteiner{
-    max-width: 550px;
-    margin-right: 0;
-}
-
-.ganhos .box-02 .conteiner{
-    max-width: 550px;
-    margin-left: 0;
-}
+.ganhos .box-01 .conteiner, .ganhos .box-02 .conteiner{ max-width: 550px; }
+.ganhos .box-01 .conteiner{ margin-right: 0; }
+.ganhos .box-02 .conteiner{ margin-left: 0; }
 
 .ganhos .position .box-01, .ganhos .position .box-02{
     flex: 1;
@@ -476,51 +461,39 @@ main .sobre::after{
     overflow: hidden;
 }
 
-.ganhos .position .box-01::before{
-    content: '';
+.ganhos .position .box-01::before, .ganhos .position .box-01::after{
     border: 1px solid #197081;
     border-radius: 57px;
-    width: 375px;
-    height: 375px;
-    opacity: 0.8;
-    position: absolute;
-    top: 200px;
-    left: -160px;
-    transform: rotate(45deg);
-}
-
-.ganhos .position .box-01::after{
     content: '';
-    border: 1px solid #197081;
-    border-radius: 57px;
-    width: 375px;
     height: 375px;
-    opacity: 0.8;
     position: absolute;
     top: 200px;
-    left: -90px;
+    opacity: 0.8;
     transform: rotate(45deg);
+    width: 375px;
 }
+.ganhos .position .box-01::before{ left: -160px; }
+.ganhos .position .box-01::after{ left: -90px; }
 
 .ganhos .box-01 h2{
-    font-family: "Oswald", sans-serif;
     color: #FFF;
-    margin-top: 120px;
-    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
     letter-spacing: 3px;
     line-height: 40px;
-    width: 60%;
     margin-bottom: 80px;
+    margin-top: 120px;
+    text-transform: uppercase;    
+    width: 60%;
 }
 
 .ganhos .box-01 p{
-    font-family: "Fira Sans", sans-serif;
     color: #FFF;
-    font-weight: 300;
+    font-family: "Fira Sans", sans-serif;
     font-size: 15px;
+    font-weight: 300;
     line-height: 27px;
-    width: 84%;
     margin-top: 30px;
+    width: 84%;
 }
 
 .ganhos .box-01 p strong{
@@ -536,47 +509,47 @@ main .sobre::after{
 .ganhos .box-02::before{
     color: #C2FF01;
     content: '$';
+    font-family: "Fira Sans", sans-serif;
+    font-size: 50px;
     position: absolute;
     bottom: 40px;
     left: 40px;
-    font-family: "Fira Sans", sans-serif;
-    font-size: 50px;
     z-index: 2;
 }
 
 .ganhos .box-02 .conteiner::before{
-    color: #000;
     background: linear-gradient(to bottom left, rgba(194,255,1,1) 0%, #000 50%);
-    -webkit-text-stroke: 2px transparent;
-    -webkit-background-clip: text;
+    color: #000;
     content: '$';
-    position: absolute;
-    bottom: 0;
-    left: 40px;
     font-family: "Fira Sans", sans-serif;
     font-size: 100px;
     font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    -webkit-text-stroke: 2px transparent;
+    -webkit-background-clip: text;
 }
 
 .ganhos .box-02 .time-line{
-    width: 78%;
-    margin-right: 0;
-    margin-left: auto;
-    border-left: 2px solid;
     border-image: linear-gradient(to top, rgba(162,196,58,1), rgba(0, 0, 0, 0)) 1 100%;
+    border-left: 2px solid;
+    margin-left: auto;
+    margin-right: 0;
     height: 814px;
     position: relative;
+    width: 78%;
 }
 
 .ganhos .box-02 h2{
     font-family: "Oswald", sans-serif;
     font-size: 23px;
-    padding-top: 120px;
-    padding-left: 40px;
-    text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 40px;
+    padding-left: 40px;
+    padding-top: 120px;
     position: relative;
+    text-transform: uppercase;
 }
 
 .ganhos .box-02 ul{
@@ -587,57 +560,53 @@ main .sobre::after{
 .ganhos .box-02 ul div{
     display: inline-block;
 }
+.ganhos .box-02 ul .dot, .ganhos .box-02 ul .dot-02{
+    border-radius: 50%;
+    text-indent: -2220000em;
+}
 
 .ganhos .box-02 ul .dot{
-    text-indent: -2220000em;
     background-color: #000;
     border: 4px solid #C2FF01;
-    border-radius: 50%;
-    width: 10px;
     height: 10px;
     margin-right: 35px;
+    width: 10px;
 }
 
 .ganhos .box-02 ul .dot-02{
-    width: 4px;
-    height: 4px;
     background-color: #C2FF01;
     border-radius: 50%;
-    text-indent: -2220000em;
+    height: 4px;
     position: relative;
     left: 0;
+    text-indent: -2220000em;
+    width: 4px;
 }
-
+.ganhos .box-02 ul .dot-02::before, .ganhos .box-02 ul .dot-02::after{
+    background-color: #C2FF01;
+    border-radius: 50%;
+    content: '';
+    height: 4px;
+    position: absolute;
+    width: 4px;
+}
 .ganhos .box-02 ul .dot-02::before{
-    content: '';
-    width: 4px;
-    height: 4px;
-    background-color: #C2FF01;
-    border-radius: 50%;
-    position: absolute;
-    opacity: 0.2;
     left: 20px;
+    opacity: 0.2;
 }
-
 .ganhos .box-02 ul .dot-02::after{
-    content: '';
-    width: 4px;
-    height: 4px;
-    background-color: #C2FF01;
-    border-radius: 50%;
-    position: absolute;
-    opacity: 0.5;
     left: 10px;
+    opacity: 0.5;
 }
 
 .ganhos .box-02 ul .ano{
     color: #C2FF01;
-    font-size: 25px;
     font-family: "Oswald", sans-serif;
+    font-size: 25px;
     font-weight: 700;
     letter-spacing: 4px;
-    margin-right: 70px;
     margin-left: 35px;
+    margin-right: 70px;
     margin-top: 50px;
 }
 
@@ -649,48 +618,48 @@ main .sobre::after{
 }
 
 .ganhos .box-02 ul .valor span{
-    font-family: "Oswald", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
     color: #C2FF01;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 50px;
 }
 
 .ganhos .box-02 h2::after{
     color: #C2FF01;
     content: '$';
+    font-family: "Fira Sans", sans-serif;
+    font-size: 50px;
     position: absolute;
     top: 180px;
     left: 145%;
-    font-family: "Fira Sans", sans-serif;
-    font-size: 50px;
     z-index: 2;
 }
 
 .ganhos .box-02 h2::before{
     color: #000;
-    background: linear-gradient(to bottom left, rgba(194,255,1,1) 0%, #000 60%);
-    -webkit-text-stroke: 1px transparent;
-    -webkit-background-clip: text;
     content: '$';
-    position: absolute;
-    top: 130px;
-    left: 145%;
+    background: linear-gradient(to bottom left, rgba(194,255,1,1) 0%, #000 60%);
     font-family: "Fira Sans", sans-serif;
     font-size: 100px;
     font-weight: 800;
     line-height: 105px;
+    position: absolute;
+    top: 130px;
+    left: 145%;
+    -webkit-text-stroke: 1px transparent;
+    -webkit-background-clip: text;
 }
 
 .ganhos .box-02 ul::after{
-    content: '$';
-    font-size: 418px;
     color: #111;
+    content: '$';
     font-family: "Fira Sans", sans-serif;
+    font-size: 418px;
     font-weight: 600;
     position: absolute;
-    left: 125%;
     bottom: 40px;
+    left: 125%;
     opacity: 34%;
 }
 
