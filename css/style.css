@@ -670,34 +670,34 @@ main .sobre::after{
 
 .passages .section{
     display: flex;
-    width: 80%;
     position: relative;
-    margin-right: 0;
     margin-left: auto;
+    margin-right: 0;
+    width: 80%;
 }
 
 .passages .section::before{
-    content: '';
     background-image: url(../img/icons/icon02.png);
     background-repeat: no-repeat;
-    width: 83px;
+    content: '';
     height: 83px;
     position: absolute;
-    top: 45px;
     right: 110.5%;
+    top: 45px;
+    width: 83px;
     z-index: 1;
 }
 
 .passages .section::after{
-    content: '';
     background-color:#C2FF01;
-    width: 177px;
-    height: 177px;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 0;
-    right: 105%;
     border-radius: 34px;
+    content: '';
+    height: 177px;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    transform: rotate(45deg);
+    width: 177px;
 }
 
 .passages .section h2, .passages .section p{
@@ -706,28 +706,28 @@ main .sobre::after{
 
 .passages .section h2{
     flex: 3;
-    text-transform: uppercase;
     font-family: "Oswald", sans-serif;
     font-size: 25px;
-    padding-left: 20px;
     letter-spacing: 2px;
+    padding-left: 20px;
+    text-transform: uppercase;
 }
 
 .passages .section p{
+    flex: 6;
     font-family: "Fira Sans", sans-serif;
     font-size: 15px;
-    flex: 6;
-    padding-left: 50px;
     line-height: 27px;
+    padding-left: 50px;
 }
 
 .passages h2#centralizar{
-    text-align: center;
-    margin-top: 70px;
     font-family: "Oswald", sans-serif;
     font-size: 18px;
-    text-transform: uppercase;
     letter-spacing: 4px;
+    margin-top: 70px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .passages ul{
@@ -738,16 +738,16 @@ main .sobre::after{
 .passages ul li{
     display: inline-block;
     max-width: 10%;
-    vertical-align: top;
     padding: 0 57px;
     position: relative;
+    vertical-align: top;
 }
 
 .passages ul li a{
     color: #000;
-    font-weight: bold;
     font-family: "Fira-sans", sans-serif;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .passages ul li a span{
@@ -756,26 +756,26 @@ main .sobre::after{
 }
 
 .passages ul li::before{
-    content: '';
-    width: 115px;
-    height: 115px;
+    border-left: 3px solid #EEE;
     border-top: 3px solid #EEE;
-    border-left:3px solid #EEE;
     border-radius: 15px;
+    content: '';
+    height: 115px;
     position: absolute;
     top: -130px;
     left: 24%;
     transform: rotate(45deg);
     vertical-align: top;
+    width: 115px;
 }
 
 .passages ul li::after{
-    width: 95px;
     height: 95px;
+    padding-left: 10px;
     position: absolute;
     top: -130px;
     left: 24%;
-    padding-left: 10px;
+    width: 95px;
 }
 
 .passages #item-01::after{ content: url(../img/icons/training.png); }
@@ -786,8 +786,8 @@ main .sobre::after{
 
 /*VERSIONS*/
 .versions{
-    background-image: url(../img/background-02.png);
     background-color: #0c0c0f;
+    background-image: url(../img/background-02.png);
     background-position: 50% 10%;
     background-repeat: no-repeat;
     color: #FFF;
@@ -806,10 +806,10 @@ main .sobre::after{
 .versions .position .txt h2{
     font-family: "Oswald", sans-serif;
     font-size: 25px;
-    text-transform: uppercase;
     letter-spacing: 3px;
     margin-top: 90px;
     max-width: 90%;
+    text-transform: uppercase;
 }
 
 .versions .position .txt h2 strong{
@@ -818,9 +818,9 @@ main .sobre::after{
 
 .versions .position .txt p{
     font-family: "Fira Sans", sans-serif;
-    line-height: 23px;
     font-size: 15px;
     font-weight: 300;
+    line-height: 23px;
     margin-top: 30px;
 }
 
@@ -838,11 +838,11 @@ main .sobre::after{
     border: 1px solid transparent;
     border-radius: 30px;
     color: #000;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
     margin-top: 200px;
     padding: 18px 80px;
-    font-size: 15px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -860,11 +860,11 @@ main .sobre::after{
 }
 
 .etapas h2{
-    text-align: center;
     font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
     font-size: 25px;
     letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .etapas ol{
@@ -876,31 +876,31 @@ main .sobre::after{
     font-family: "Fira Sans", sans-serif;
     font-size: 15px;
     max-width: 17%;
-    vertical-align: top;
     padding: 0 42px;
     position: relative;
     text-align: center;
+    vertical-align: top;
 }
 
 .etapas ol li::before{
-    content: '';
     background-color: #C2FF01;
     border-radius: 15px;
-    width: 45px;
+    content: '';
     height: 45px;
     position: absolute;
     bottom: 70px;
     right: 115px;
     transform: rotate(45deg);
+    width: 45px;
 }
 
 .etapas ol li::after{
-    position: absolute;
-    bottom: 75px;
-    right: 125px;
     font-family: "Uni sans", sans-serif;
     font-size: 25px;
     font-weight: 800;
+    position: absolute;
+    bottom: 75px;
+    right: 125px;
 }
 
 .etapas ol li#numeral-01::after{ content: '.1'; }
@@ -919,83 +919,83 @@ main .sobre::after{
 .etapas ol li#subs::before{ 
     background: linear-gradient(59.46deg, #1D737E -67.96%, #4FB9C7 103.75%);
     border-radius: 14px;
-    transform: none;
-    width: 256px;
     height: 158px;
     position: absolute;
     bottom: -50px;
     left: 0%;
+    transform: none;
+    width: 256px;
 }
 
 .etapas #subs a{
-    font-family: "Source Sans Pro", sans-serif;
-    text-transform: uppercase;
-    color: #000;
-    letter-spacing: 2px;
-    font-weight: bold;
     background-color: #C2FF01;
-    padding: 18px 40px;
     border-radius: 30px;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;;
+    color: #000;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 18px 40px;
     position: absolute;
     bottom: 0;
     left: 40%;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;;
 }
 
 .etapas #subs a::before{
-    content: '';
     border: 1px solid #FFF;
-    border-left: transparent;
     border-bottom: transparent;
+    border-left: transparent;
     border-radius: 39px;
-    width: 118px;
+    content: '';
     height: 118px;
-    opacity: 0.8;
     position: absolute;
     bottom: -30px;
     right: 0;
+    opacity: 0.8;
     transform: rotate(45deg);
+    width: 118px;
 }
 
 .etapas #subs a::after{
-    content: '';
     border: 1px solid #FFF;
-    border-left: transparent;
     border-bottom: transparent;
+    border-left: transparent;
     border-radius: 39px;
-    width: 118px;
+    content: '';
     height: 118px;
-    opacity: 0.8;
     position: absolute;
     bottom: -30px;
     right: -20px;
+    opacity: 0.8;
     transform: rotate(45deg);
+    width: 118px;
 }
 
 main .etapas::before, main .etapas::after{
-    content: '';
     border: solid 1px #197081;
     border-radius: 57px;
+    content: '';
     height: 450px;
     position: absolute;
     left: -250px;
     opacity: 0.4;
-    width: 450px;
     transform: rotate(45deg);
+    width: 450px;
 }
 main .etapas::before{ bottom: 60px; }
 main .etapas::after{ bottom: 180px; }
 
 main .etapas .conteiner::before, main .etapas .conteiner::after{
-    content: '';
     border: none;
     border-radius: 2em;
+    content: '';
     height: 130px;
-    width: 130px;
     position: absolute;
     transform: rotate(45deg);
+    width: 130px;
 }
 main .etapas .conteiner::before{
     background-color: #C2FF01;
@@ -1012,36 +1012,35 @@ main .etapas .conteiner::after{
 }
 
 main .etapas .position::before, main .etapas .position::after{
-    content: '';
     border: solid 1px #197081;
     border-radius: 57px;
+    content: '';
     height: 450px;
     position: absolute;
     opacity: 0.4;
-    width: 450px;
     transform: rotate(45deg);
+    width: 450px;
 }
 main .etapas .position::before{
     right: -330px;
     top: 180px;
 }
-
  main .etapas .position::after{
     right: -330px;
     top: 300px;
 }
 
 main .etapas .dec::before{
-    content: '';
     background-color: #C2FF01;
     border: none;
     border-radius: 2em;
+    content: '';
     height: 130px;
-    width: 130px;
     position: absolute;
-     right:  10px;
-     bottom: -200px;
+    bottom: -200px;
+    right:  10px;
     transform: rotate(45deg);
+    width: 130px;
     z-index: 1;
 }
 
@@ -1054,15 +1053,9 @@ main .etapas .dec::before{
     display: flex;
 }
 
-.publ .box-01 .conteiner{
-    max-width: 550px;
-    margin-right: 0;
-}
-
-.publ .box-02 .conteiner{
-    max-width: 550px;
-    margin-left: 0;
-}
+.publ .box-01 .conteiner, .publ .box-02 .conteiner{ max-width: 550px; }
+.publ .box-01 .conteiner{ margin-right: 0; }
+.publ .box-02 .conteiner{ margin-left: 0; }
 
 .publ .box-01, .publ .box-02{
     color: #FFF;
@@ -1074,17 +1067,17 @@ main .etapas .dec::before{
 }
 
 .publ .box-01 h2, .publ .box-01 h3, .publ .box-02 h2, .publ .box-02 h3{
-    font-family: "Oswald", sans-serif;
     color: #FFF;
-    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .publ .box-01 h2, .publ .box-02 h2{
+    line-height: 40px;
     margin-bottom: 30px;
     margin-top: 120px;
     width: 60%;
-    line-height: 40px;
 }
 
 .publ .box-01 h3, .publ .box-02 h3{
@@ -1092,16 +1085,16 @@ main .etapas .dec::before{
 }
 
 .publ .box-01 h3#sub-txt-01{
-    margin-top: 0;
-    margin-bottom: 60px;
     font-size: 18px;
+    margin-bottom: 60px;
+    margin-top: 0;
 }
 
 .publ .box-01 p, .publ .box-02 p{
-    font-family: "Fira Sans", sans-serif;
     color: #FFF;
-    font-weight: 300;
+    font-family: "Fira Sans", sans-serif;
     font-size: 15px;
+    font-weight: 300;
     width: 84%;
 }
 
@@ -1110,20 +1103,20 @@ main .etapas .dec::before{
 }
 
 .publ .box-01 li, .publ .box-02 li{
-    position: relative;
-    margin-top: 10px;
-    font-family: "Fira Sans", sans-serif;
     color: #FFF;
-    font-weight: 300;
+    font-family: "Fira Sans", sans-serif;
     font-size: 15px;
+    font-weight: 300;
     margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
 }
 
 .publ .box-01 li::before, .publ .box-02 li::before{
     content: url(../img/icons/correct.png);
     position: relative;
-    top: 8px;
     left: -20px;
+    top: 8px;
 }
 
 .publ .box-01 li#dif{
@@ -1143,37 +1136,26 @@ main .etapas .dec::before{
 
 .publ .box-01 .destaque{
     background: linear-gradient(270deg, #171717 0%, rgba(23, 23, 23, 0) 100%);
-    height: 321px;
     margin-top: 80px;
     position: relative;
+    height: 321px;
 }
 
-.publ .box-01 .destaque::before{
-    content: '';
-    border: 1px solid #197081;
-    border-bottom: transparent;
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    left: -90px;
-    border-radius: 57px;
-    opacity: 0.8;
-    transform: rotate(135deg);
-}
 
-.publ .box-01 .destaque::after{
-    content: '';
+.publ .box-01 .destaque::before, .publ .box-01 .destaque::after{
     border: 1px solid #197081;
     border-bottom: transparent;
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 0;
-    left: -30px;
     border-radius: 57px;
+    content: '';
+    height: 300px;
+    position: absolute;
     opacity: 0.8;
     transform: rotate(135deg);
+    width: 300px;
 }
+.publ .box-01 .destaque::before{ left: -90px; }
+.publ .box-01 .destaque::after{ top: 0; left: -30px; }
+
 
 .publ .box-01 .destaque h3{
     padding-top: 60px;
@@ -1184,8 +1166,8 @@ main .etapas .dec::before{
 }
 
 .publ .box-01 .continuacao{
-    margin-top: 100px;
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .publ .box-01 .continuacao p{
@@ -1205,8 +1187,8 @@ main .etapas .dec::before{
 }
 
 .publ .box-02 ul{
-    margin-top: 40px;
     margin-bottom: 80px;
+    margin-top: 40px;
 }
 
 .publ .box-02 p{
@@ -1218,21 +1200,21 @@ main .etapas .dec::before{
 }
 
 .publ .box-02 h3#sub-txt-05{
+    margin-bottom: 130px;
     margin-top: 100px;
     width: 60%;
-    margin-bottom: 130px;
 }
 
 .publ .box-02 a{
-   color: #000;
-   border: 2px solid transparent;
-   text-transform: uppercase; 
-   font-weight: bold;
-   margin-left: 20px;
-   background-color: #C2FF01;
-   padding: 18px 65px;
-   border-radius: 30px;
-   font-size: 15px;
+    background-color: #C2FF01;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 18px 65px;
+    text-transform: uppercase; 
 }
 
 .publ .box-02 a:hover{
@@ -1248,27 +1230,27 @@ main .investimento, .investimento .dec{
 }
 
 main .investimento::before, main .investimento::after{
-    content: '';
     border: solid 1px #197081;
     border-radius: 57px;
+    content: '';
     height: 450px;
     position: absolute;
     left: -250px;
     opacity: 0.4;
-    width: 450px;
     transform: rotate(45deg);
+    width: 450px;
 }
 main .investimento::before{ top: 65px; }
 main .investimento::after{ top: 180px; }
 
 main .investimento .dec::before, main .investimento .dec::after{
-    content: '';
     border: none;
     border-radius: 2em;
+    content: '';
     height: 130px;
-    width: 130px;
     position: absolute;
     transform: rotate(45deg);
+    width: 130px;
 }
 main .investimento .dec::before{
     background-color: #C2FF01;
@@ -1285,20 +1267,20 @@ main .investimento .dec::after{
 }
 
 .investimento .money{
-    position: relative;
     padding-top: 250px;
+    position: relative;
 }
 
 .investimento .conteiner .money::before{
-    content: '';
     background-color: #C2FF01;
-    width: 177px;
-    height: 177px;
     border-radius: 34px;
-    transform: rotate(45deg);
+    content: '';
+    height: 177px;
     position: absolute;
     top: -25px;
     left: 42%;
+    transform: rotate(45deg);
+    width: 177px;
 }
 
 .investimento .conteiner .money::after{
@@ -1314,8 +1296,8 @@ main .investimento .dec::after{
 
 .investimento .info h2, .investimento .info h3{
     font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .investimento .info h2{
@@ -1337,24 +1319,21 @@ main .investimento .dec::after{
     position: relative;
 }
 
-.investimento .info p em::before{
-    content: '“';
+.investimento .info p em::before, .investimento .info p em::after{
+    color: #197081;
     font-family: 'Unkempt', cursive;
     font-size: 80px;
-    color: #197081;
     position: absolute;
+}
+.investimento .info p em::before{
+    content: '“';
     left: -100px;
     top: -20px;
 }
-
 .investimento .info p em::after{
     content: '”';
-    font-family: 'Unkempt', cursive;
-    font-size: 80px;
-    color: #197081;
-    position: absolute;
-    top: -10px;
     right: -75px;
+    top: -10px;
 }
 
 .investimento .info .txt{
@@ -1375,10 +1354,10 @@ main .investimento .dec::after{
 .investimento .valores ul#cursos li{
     display: inline-block;
     font-weight: bold;
-    width: 18%;
+    padding: 0 9px;
     text-align: center;
     vertical-align: top;
-    padding: 0 9px;
+    width: 18%;
 }
 
 .investimento .valores ul#cursos li div{
@@ -1394,24 +1373,24 @@ main .investimento .dec::after{
 }
 
 .investimento .valores ul#cursos li .correto span{
-    font-size: 40px;
-    color: #00AA54;
-    padding: 5px 12px;
     background-color: #C2FF01;
     border: 1px solid #00AA54;
     border-radius: 50%;
     box-shadow: 0px 2px 5px rgba(0, 170, 84, 0.75);
+    color: #00AA54;
+    font-size: 40px;
+    padding: 5px 12px;
 }
 
 .investimento .valores ul#cursos li .correto::before{
+    background-color: #C2FF01;
+    border-radius: 50%;
     content: '';
+    height: 84px;
     position: absolute;
     left: 29%;
     top: -12px; 
-    border-radius: 50%;
-    background-color: #C2FF01;
     width: 84px;
-    height: 84px;
     z-index: -99;
 }
 
@@ -1421,8 +1400,8 @@ main .investimento .dec::after{
 }
 
 .investimento .valores ul#cursos li .formacao span{
-    display: block;
     color: #197081;
+    display: block;
 }
 
 .investimento .valores ul#cursos li .preco{
@@ -1439,14 +1418,14 @@ main .investimento .dec::after{
 }
 
 .investimento .box-valor a{
+    align-items: center;
     border: 2px solid #D40033;
     border-radius: 20px;
+    color: #000;
     display: flex;
-    width: 535px;
     height: 131px;
     justify-content: center;
-    align-items: center;
-    color: #000;
+    width: 535px;
 }
 
 .investimento .box-valor a p{
@@ -1477,22 +1456,21 @@ main .investimento .dec::after{
 
 .investimento .box-valor .valor-02 a p{
     font-weight: normal;
-    text-transform: none;
     padding: 20px;
+    text-transform: none;
 }
 
 .investimento .box-valor .valor-02 a p.preco{
-    padding-right: 0;
-    padding-left: 0;
     color: #D40033;
     font-weight: bold;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .investimento .box-valor a p{
     font-family: "Fira Sans", sans-serif;
     font-weight: 600;
 }
-
 
 .investimento .roots{
     display: flex;
@@ -1505,17 +1483,17 @@ main .investimento .dec::after{
 
 .investimento .roots h3{
     font-family: "Montserrat", sans-serif;
-    font-weight: bold;
     font-size: 25px;
+    font-weight: bold;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 .investimento .roots .box-01 p, .investimento .roots .box-02 ul li{
     font-family: "Fira Sans", sans-serif;
-    font-weight: 300;
     font-size: 18px;
+    font-weight: 300;
     line-height: 25px;
     margin-top: 20px;
     width: 80%;
@@ -1526,20 +1504,20 @@ main .investimento .dec::after{
 }
 
 .investimento .roots .box-02{
-    margin-top: 50px;
     margin-left: 80px;
+    margin-top: 50px;
 }
 
 .investimento .roots .box-02 p{
     font-family: "Fira Sans", sans-serif;
-    font-weight: 600;
     font-size: 18px;
+    font-weight: 600;
     line-height: 25px;
 }
 
 .investimento .roots .box-02 ul{
-    padding-left: 20px;
     margin-top: 48px;
+    padding-left: 20px;
 }
 
 .investimento .roots .box-02 ul li{
@@ -1549,14 +1527,14 @@ main .investimento .dec::after{
 .investimento .roots .box-02 ul li::before{
     content: url(../img/icons/correct.png);
     position: absolute;
-    top: 8px;
     left: -40px;
+    top: 8px;
 }
 
 .investimento .roots h4{
     font-family: "Fira Sans", sans-serif;
-    font-weight: 500;
     font-size: 27px;
+    font-weight: 500;
     line-height: 25px;
     margin-top: 40px;
     width: 100%;
@@ -1579,12 +1557,12 @@ main .investimento .dec::after{
 .investimento .ancora a{
     background-color: #C2FF01;
     border-radius: 30px;
+    color: #000;
     padding-left: 60px;
     padding-right: 60px;
-    color: #000;
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: bold;
     font-size: 15px;
+    font-weight: bold;
     line-height: 64px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -1606,32 +1584,33 @@ main .investimento .dec::after{
     display: flex;
 }
 
+
 main .depoimentos::before, main .depoimentos::after{
-    content: '';
     border: solid 1px #197081;
     border-radius: 57px;
+    content: '';
     height: 450px;
     position: absolute;
     right: -400px;
     opacity: 0.4;
-    width: 450px;
     transform: rotate(45deg);
-        
+    width: 450px;
 }
 main .depoimentos::before{ top: -320px; }
 main .depoimentos::after{ top: -200px; }
 
+
 main .depoimentos .position::before{
-    content: '';
     background-color: #C2FF01;
     border: none;
     border-radius: 2em;
+    content: '';
     height: 130px;
-    width: 130px;
     position: absolute;
-     right: -50px;
-     top: -30px;
+    right: -50px;
+    top: -30px;
     transform: rotate(45deg);
+    width: 130px;
     z-index: 1;
 }
 
@@ -1655,62 +1634,58 @@ main .depoimentos .position::before{
     max-width: 550px;
 }
 
-.depoimentos .box-01 h2{
-    color: #FFF;
+.depoimentos .box-01 h2, .depoimentos .box-01 p{
     font-family: "Oswald", sans-serif;
     font-weight: bold;
+    text-transform: uppercase;
+}
+.depoimentos .box-01 h2{
+    color: #FFF;
     font-size: 25px;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     margin-top: 80px;
 }
 
 .depoimentos .box-01 p{
-    font-family: "Oswald", sans-serif;
-    font-weight: bold;
+    color: #C2FF01;
     font-size: 18px;
     letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #C2FF01;
     margin-top: 30px;
     width: 80%;
 }
 
 .depoimentos .box-01 #v1, .depoimentos .box-01 #v2{
-    margin-top: 30px;
     margin-bottom: 100px;
+    margin-top: 30px;
 }
 .depoimentos .box-01 #v2{
     display: none;
 }
 
 .depoimentos .box-01 .videos video{
-    width: 273px;
     border-radius: 17px;
-    margin-left: 20px;
     cursor: pointer;
+    margin-left: 20px;
+    width: 273px;
 }
 
 .depoimentos .box-01 .videos{
-    position: relative;
-    margin-bottom: 40px;
     display: inline-block;
+    margin-bottom: 40px;
+    position: relative;
 }
 
 .depoimentos .box-01 .videos span{
-    display: block;
     background-color: #000;
-    padding-top: 15px;
-    padding-bottom: 12px;
-    padding-left: 20px;
-    padding-right: 18px;
     border-radius: 50%;
-    position: absolute;
-    top: 45px;
-    left: 50%;
-    margin-left: -20px;
-    z-index: 3;
     cursor: pointer;
+    display: block;
+    margin-left: -20px;
+    padding: 15px 20px 12px 18px;
+    position: absolute;
+    left: 50%;
+    top: 45px;
+    z-index: 3;
 }
 
 .depoimentos .conteiner .botoes{
@@ -1720,12 +1695,12 @@ main .depoimentos .position::before{
 }
 
 .depoimentos .conteiner .botoes span{
-    display: block;
     border: none;
-    width: 60px;
-    padding: 24px 0;
     cursor: pointer;
+    display: block;
+    padding: 24px 0;
     text-align: center;
+    width: 60px;
 }
 
 .depoimentos .conteiner .botoes #botao-up{
@@ -1755,12 +1730,12 @@ main .depoimentos .position::before{
 
 .depoimentos .box-02 ul li .cliente{
     background-color: #FFF;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
-    width: 152px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
     height: 141px;
     margin-top: 20px;
     padding-top: 35px;
+    width: 152px;
 }
 
 .depoimentos .box-02 h2, .depoimentos .box-02 p{
@@ -1768,13 +1743,11 @@ main .depoimentos .position::before{
     font-weight: bold;
     text-transform: uppercase;
 }
-
 .depoimentos .box-02 h2{
     font-size: 25px;
     letter-spacing: 0.1em;
     margin-top: 80px;
 }
-
 .depoimentos .box-02 p{
     font-size: 18px;
     letter-spacing: 0.2em;
@@ -1782,9 +1755,9 @@ main .depoimentos .position::before{
 }
 
 .depoimentos .box-02 img{
-    width: 100px;
     display: block;
     margin: 0 auto;
+    width: 100px;
 }
 
 .depoimentos .box-02 img#logo01{
@@ -1792,8 +1765,8 @@ main .depoimentos .position::before{
     width: 70px;
 }
 .depoimentos .box-02 img#logo02{
-    padding-top: 15px;
     margin-left: 27px;
+    padding-top: 15px;
     width: 84px;
 }
 .depoimentos .box-02 img#logo03{
@@ -1804,8 +1777,8 @@ main .depoimentos .position::before{
     width: 88px;
 }
 .depoimentos .box-02 img#logo05{
-    padding-top: 40px;
     margin-left: 12px;
+    padding-top: 40px;
     width: 123px;
 }
 .depoimentos .box-02 img#logo06{
@@ -1829,36 +1802,36 @@ main .depoimentos .position::before{
 }
 
 main .feedback::before, main .feedback::after{
-    content: '';
     border: solid 1px #197081;
     border-left: transparent;
     border-radius: 57px;
+    content: '';
     height: 300px;
     position: absolute;
     top: 40px;
     opacity: 0.4;
-    width: 300px;
     transform: rotate(45deg);
+    width: 300px;
 }
 main .feedback::before{ left: -60px; }
 main .feedback::after{ left: 0px; }
 
 .feedback .position{
-    position: relative;
-    padding-top: 250px;
     padding-bottom: 120px;
+    padding-top: 250px;
+    position: relative;
 }
 
 .feedback .conteiner .position::before{
-    content: '';
     background-color: #C2FF01;
-    width: 177px;
-    height: 177px;
     border-radius: 34px;
-    transform: rotate(45deg);
+    content: '';
+    height: 177px;
     position: absolute;
-    top: -80px;
     left: 42%;
+    top: -80px;
+    transform: rotate(45deg);
+    width: 177px;
 }
 
 .feedback .conteiner .position::after{
@@ -1870,30 +1843,30 @@ main .feedback::after{ left: 0px; }
 
 .feedback h2{
     font-family: "Oswald", sans-serif;
-    font-weight: bold;
     font-size: 25px;
+    font-weight: bold;
     line-height: 39px;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .feedback p{
     font-family: "Fira Sans", sans-serif;
     font-size: 15px;
     line-height: 20px;
-    text-align: center;
-    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
     max-width: 58%;
+    text-align: center;
 }
 
 .feedback h3{
-    text-align: center;
     color: #C2FF01;
-    text-transform: uppercase;
     margin-top: 60px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .feedback .feed{
@@ -1902,10 +1875,10 @@ main .feedback::after{ left: 0px; }
 }
 
 .feedback .feed a{
+    border-radius: 10px;
     display: block;
     max-width: 60%;
     padding: 50px 80px;
-    border-radius: 10px;
     position: relative;
 }
 
@@ -1914,22 +1887,21 @@ main .feedback::after{ left: 0px; }
     color: #000;
 }
 
-.feedback .feed .box-01 a::before{
-    content: url(../img/icons/positivo.png);
-    position: absolute;
-    top: -100px;
-    left: 230px;
-}
-
 .feedback .feed .box-02 a{
     background-color: #D40033;
     color: #FFF;
 }
 
-.feedback .feed .box-02 a::after{
-    content: url(../img/icons/negativo.png);
+.feedback .feed .box-01 a::before, .feedback .feed .box-02 a::after{
     position: absolute;
     top: -100px;
+}
+.feedback .feed .box-01 a::before{
+    content: url(../img/icons/positivo.png);
+    left: 230px;
+}
+.feedback .feed .box-02 a::after{
+    content: url(../img/icons/negativo.png);
     right: 215px;
 }
 
@@ -1937,56 +1909,46 @@ main .feedback::after{ left: 0px; }
 .you-video{
     background: linear-gradient(180deg, #171717 41.46%, rgba(23, 23, 23, 0) 100%);
     background-color: #000;
-    padding-top: 75px;
     padding-bottom: 75px;
+    padding-top: 75px;
     position: relative;
 }
 
-main .you-video::before{
-    content: '';
-    border: solid 1px #197081;
-    border-top: transparent;
-    border-radius: 57px;
-    height: 300px;
-    position: absolute;
-     right: -120px;
-     bottom: 220px;
-    opacity: 0.4;
-    width: 300px;
-    transform: rotate(45deg);
-}
 
- main .you-video::after{
-    content: '';
+main .you-video::before, main .you-video::after{
     border: solid 1px #197081;
     border-top: transparent;
     border-radius: 57px;
+    content: '';
     height: 300px;
     position: absolute;
-     right: -60px;
-     bottom: 220px;
+    bottom: 220px;
     opacity: 0.4;
-    width: 300px;
     transform: rotate(45deg);
+    width: 300px;
 }
+main .you-video::before{ right: -120px; }
+main .you-video::after{ right: -60px; }
+
+
 .you-video h2{
     color: #FFF;
     font-family: "Oswald";
-    font-weight: bold;
     font-size: 18px;
+    font-weight: bold;
     line-height: 27px;
-    text-align: center;
     letter-spacing: 0.2em;
-    text-transform: uppercase;
-    max-width: 60%;
     margin: 0 auto;
+    max-width: 60%;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .you-video iframe{
-    margin-top: 60px;
     border: none;
-    max-width: 1100px;
-    width: 100%;
     height: 660px;
     margin: 20px;
+    margin-top: 60px;
+    max-width: 1100px;
+    width: 100%;
 }

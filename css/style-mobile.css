@@ -47,19 +47,21 @@
     main .principal .image-position{
         display: none;
     }
+
     main .bg-principal{
-        padding-top: 300px;
         height: 550px;
+        padding-top: 300px;
     }
-    
 
     main .principal .txt-principal .txt-01,
     main .principal .txt-principal .txt-02{
         max-width: 90%;
     }
-    .bg-principal .link{
+
+    .bg-principal .link, .sobre .rede-social{
         text-align: center;
     }
+
     main .principal .txt-principal a{
         display: inline-block;
     }
@@ -70,10 +72,6 @@
 
     main .sobre .sbr-position-01{
         padding: 10px;
-    }
-
-    .sobre .rede-social{
-        text-align: center;
     }
 
     .sobre .rede-social a{
@@ -102,8 +100,8 @@
     }
 
     .etapas ol li::after{
-        top: -78px;
         left: 88px;
+        top: -78px;
     }
 
     .etapas #subs a{
@@ -122,7 +120,7 @@
         padding: 0 20px;
     }
 
-    .publ .box-02 .conteiner{
+    .publ .box-02 .conteiner, .depoimentos .box-02 .conteiner{
         padding-left: 20px;
     }
 
@@ -137,9 +135,7 @@
     .investimento .box-valor a{
         width: auto;
     }
-    .depoimentos .box-02 .conteiner{
-        padding-left: 20px;
-    }
+
     .you-video iframe{
         width: 95%;
     }
@@ -154,31 +150,37 @@
         max-width: 300px;
     }
 
-    header .menu-pos .info{
+    header .menu-pos .info, main .principal .image-position{
         display: none;
     }
 
     header .lsg{
-        width: 200px;
+        border-radius: 20px;
         height: 200px;
         position: absolute;
-        top: -100px;
         left: 0;
-        border-radius: 20px;
+        top: -100px;
+        width: 200px;
     }
 
     header .lsg img{
         margin: 0;
-        width: 60px;
         margin-top: 100px;
         margin-left: 110px;
+        width: 60px;
     }
 
-    main .principal .image-position {
-        display: none;
-    }
-
-    main .m-position-01{
+    main .m-position-01, 
+    main .principal .txt-principal, main .principal .txt-principal .txt-01 span, 
+    main .sobre .sbr-position-01,
+    .specbook .conteiner,
+    .ganhos .position, .ganhos .box-02 ul .valor span,
+    .versions .position,
+    .etapas #subs,
+    .investimento .box-valor, .investimento .roots,
+    .depoimentos .position, .depoimentos .box-01 #v2,
+    .depoimentos .box-02 ul, .depoimentos .box-02 ul li .cliente,
+    .feedback .feed{
         display: block;
     }
 
@@ -187,35 +189,29 @@
     }
 
     main .principal .txt-principal{
-        display: block;
         text-align: left;
     }
 
     main .principal .txt-principal .txt-01 span{
         margin: 0;
-        display: block;
         padding: 0 20px;
     }
 
     main .principal .txt-principal a{
-        width: auto;
         margin-left: 10px;
         margin-right: 10px;
+        width: auto;
     }
 
     main .sobre .cut{
-        width: 200px;
         height: 250px;
         margin: 0 auto;
+        width: 200px;
     }
 
     main .sobre .cut img{
-        width: 300px;
         left: -3em;
-    }
-
-    main .sobre .sbr-position-01{
-        display: block;
+        width: 300px;
     }
 
     main .sobre .image-position::before{
@@ -247,10 +243,6 @@
         margin-left: 20px;
     }
 
-    .specbook .conteiner{
-        display: block;
-    }
-
     .specbook .txt-02{
         text-align: start;
     }
@@ -272,23 +264,11 @@
         padding-bottom: 140px;
     }
 
-    .ganhos .position{
-        display: block;
-    }
-
     .ganhos .box-02 ul .valor{
         width: 65%;
     }
-    .ganhos .box-02 ul .ano{
+    .ganhos .box-02 ul .ano, .ganhos .box-02 ul .dot-02{
         display: none;
-    }
-
-    .ganhos .box-02 ul .dot-02{
-        display: none;
-    }
-
-    .ganhos .box-02 ul .valor span{
-        display: block;
     }
 
     .ganhos .box-02 ul li{
@@ -311,11 +291,11 @@
 
     .passages ul li{
         display: block;
-        margin-top: 200px;
-        text-align: center;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 200px;
         max-width: 410px;
+        text-align: center;
     }
 
     .passages ul li::before, .passages ul li::after{
@@ -323,49 +303,36 @@
     }
 
     .versions{
+        height: auto;
         padding: 20px;
         padding-bottom: 80px;
-        height: auto;
     }
 
     .versions .position .txt h2{
         margin-top: 20px;
     }
 
-    .versions .position{
-        display: block;
-    }
-
     .versions .position .alg{
         display: block;
         margin-top: 40px;
-        white-space: nowrap; 
         text-align: center;
+        white-space: nowrap; 
     }
 
     .versions .position a{
-        padding: 18px 20px;
         margin-left: auto;
         margin-right: auto;
+        padding: 18px 20px;
     }
 
     .etapas ol li{
         display: block;
-        max-width: 100%;
         margin-top: 150px;
+        max-width: 100%;
     }
 
-    .etapas #subs{
-        display: block;
-    }
-
-    .etapas ol li::after{
-        right: 50%;
-    }
-
-    .etapas ol li::before{
-        right: 47%;
-    }
+    .etapas ol li::after{ right: 50%; }
+    .etapas ol li::before{ right: 47%; }
 
     .etapas #subs a{
         position: static;
@@ -378,14 +345,15 @@
     .etapas .link{
         text-align: center;
     }
+
     .publ .position{
         display: block;
         padding: 1px;
     }
 
     .publ .box-01 h2, .publ .box-02 h2{
-        padding-top: 40px;
         margin-top: 0;
+        padding-top: 40px;
     }
 
     .publ .box-01 .continuacao p{
@@ -397,15 +365,12 @@
         padding-bottom: 80px;
     }
     .publ .box-02 .conteiner{
-        padding-left: 0;
-        padding: 1px;
         margin-left: auto;
+        padding: 1px;
+        padding-left: 0;
     }
 
-    .publ .box-01 .continuacao{
-        margin-bottom: 0;
-    }
-    .publ .box-02 h3#sub-txt-05{
+    .publ .box-01 .continuacao, .publ .box-02 h3#sub-txt-05{
         margin-bottom: 0;
     }
 
@@ -414,10 +379,10 @@
     }
 
     .publ .box-02 a{
-        margin-top: 40px;
         display: inline-block;
         margin-bottom: 80px;
         margin-left: 0;
+        margin-top: 40px;
     }
 
     .investimento .money{
@@ -426,24 +391,21 @@
 
     .investimento .valores ul#cursos li{
         display: block;
-        width: 100%;
         max-width: 90%;
+        width: 100%;
     }
 
     .investimento .valores ul#cursos li .correto::before{
         display: none;
     }
 
-    .investimento .box-valor{
-        display: block;
-    }
     .investimento .box-valor a{
-        width: 90%;
-        margin-left: 5%;
         display: block;
-        text-align: center;
         height: auto;
+        margin-left: 5%;
         padding: 15px 0;
+        text-align: center;
+        width: 90%;
     }
 
     .investimento .box-valor .valor-01, .investimento .box-valor .valor-02{
@@ -454,10 +416,6 @@
         padding: 0;
     }
 
-    .investimento .roots{
-        display: block;
-    }
-
     .investimento .roots .box-02{
         margin-left: 20px;
     }
@@ -466,10 +424,7 @@
         margin-left: 40px;
     }
     
-    .investimento .info p em::before{
-        display: none;
-    }
-    .investimento .info p em::after{
+    .investimento .info p em::before, .investimento .info p em::after{
         display: none;
     }
 
@@ -477,16 +432,8 @@
         width: 90%;
     }
 
-    .depoimentos .position{
-        display: block;
-    }
-
-    .depoimentos .conteiner .botoes{
+    .depoimentos .conteiner .botoes, main .depoimentos .position::before{
         display: none;
-    }
-
-    .depoimentos .box-01 #v2{
-        display: block;
     }
 
     .depoimentos .box-01 #v1, .depoimentos .box-01 #v2{
@@ -494,13 +441,9 @@
         text-align: center;
     }
 
-    main .depoimentos .position::before{
-        display: none;
-    }
-
     .depoimentos .box-01{
-        padding-top: 2px;
         padding-bottom: 30px;
+        padding-top: 2px;
     }
 
     .investimento .roots .box-01 h4, .investimento .roots .box-02 h4{
@@ -513,10 +456,6 @@
 
     .depoimentos .box-02 .conteiner{
         padding-left: 20px;
-    }
-
-    .depoimentos .box-02 ul, .depoimentos .box-02 ul li .cliente{
-        display: block;
     }
 
     .depoimentos .box-02 ul li .cliente{
@@ -543,17 +482,13 @@
         padding-top: 40px;
     }
 
-    .feedback .feed{
-        display: block;
-    }
-
     .feedback .feed a{
         max-width: 90%;
     }
 
     .feedback .feed a{
-        padding: 20px 0;
         margin-left: 20px;
+        padding: 20px 0;
     }
     .feedback p{
         margin-top: 20px;
@@ -570,8 +505,8 @@
         max-width: 100%;
     }
     .you-video iframe{
-        width: 70%;
         height: auto;
+        width: 70%;
     }
 
     .you-video .conteiner{
@@ -580,8 +515,8 @@
     
     footer .position{
         display: block;
-        text-align: center;
         padding: 1px;
+        text-align: center;
     }
 
     footer .position div{
@@ -598,8 +533,8 @@
     }
 
     main .sobre .cut{
-        width: 320px;
         height: 400px;
+        width: 320px;
     }
 
     main .sobre .cut img{
