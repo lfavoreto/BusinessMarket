@@ -244,7 +244,7 @@ main form label{
     text-transform: uppercase;
 }
 
-main form fieldset input{
+main form fieldset input, main form fieldset select{
     background: none;
     border: none;
 	border-bottom: 2px solid #C2FF01;
@@ -255,7 +255,23 @@ main form fieldset input{
     width: 100%;
 }
 
-main form input:focus{
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+select:invalid {
+    color: gray;
+  }
+
+main form fieldset select option{
+    color: black;
+    padding: 0;
+}
+
+main form input:focus, main form select:focus{
 	outline: 0;
 }
 

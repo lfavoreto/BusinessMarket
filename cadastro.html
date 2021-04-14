@@ -53,7 +53,7 @@
                                             <input type="email" name="email" id="email" placeholder="EX: lucasfavoreto@gmail.com" autocomplete="off" required class="in-etapa01">
 
                                             <label for="cel">Celular</label>
-                                            <input type="tel" name="cel" id="cel" placeholder="EX: 13999999999" maxlength="15" autocomplete="off" required class="in-etapa01" minlength="15">
+                                            <input type="tel" name="cel" id="cel" placeholder="EX: 13999999999" maxlength="15" minlength="14" autocomplete="off" required class="in-etapa01" minlength="15">
                                             
                                             <div class="botao">
                                                 <input type="submit" name="next" value="Continuar" class="next acao conti">
@@ -71,13 +71,17 @@
 
                                         <div class="cont">
                                             <label for="cpf">CPF</label>
-                                            <input type="text" name="cpf" id="cpf" placeholder="EX: 999.999.999-99" autocomplete="off" required class="in-etapa02">
-
-                                            <label for="cidade">Cidade</label>
-                                            <input type="text" name="cidade" id="cidade" placeholder="EX: Santos" autocomplete="off" required class="in-etapa02">
+                                            <input type="text" name="cpf" id="cpf" placeholder="EX: 999.999.999-99" autocomplete="off" minlength="14" maxlength="14" required class="in-etapa02">
 
                                             <label for="estado">Estado</label>
-                                            <input type="text" name="estado" id="estado" placeholder="EX: São Paulo" autocomplete="off" required class="in-etapa02">
+                                            <select id="estado" name="estado" required>
+                                                <option value="" disabled selected></option>
+                                            </select>
+
+                                            <label for="cidade">Cidade</label>
+                                            <select id="cidade" name="cidade" required>
+                                                <option value="" disabled selected>Ex: São Paulo</option>
+                                            </select>
                                             
                                             <div class="botao">
                                                 <input type="submit" class="prev acao" value="Voltar" onclick="return false;" id="voltar">
