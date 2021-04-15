@@ -24,8 +24,8 @@ $('body').mouseleave(function(){
 /****VALIDACAO****/
 
 function validateName(fullname){
-  const re = /^[A-Za-z ]+$/;
-  return re.test(fullname);
+	const re = /^[A-Za-z-ç ^a-zà-ú]+$/;
+  	return re.test(fullname);
 }
 
 function validateCel(cel){
