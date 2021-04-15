@@ -164,6 +164,14 @@
   text-transform: uppercase;
 }
 
+.modal form span{
+  display: block;
+  font-family: "Source Sans Pro";
+  font-size: 12px;
+  position: absolute;
+  left: 36.7%;
+}
+
 @media(max-width: 1280px){
   .modal-content::before, .modal-content::after{
     display: none;
@@ -181,6 +189,10 @@
     margin: 0 0 0 auto;
     padding-right: 30px;
     width: 60%;
+  }
+
+  .modal span{
+    left: 50%;
   }
 }
 
@@ -209,13 +221,17 @@
   .modal .lsg{
     top: -250px;
   }
+
+  .modal form span{
+    left: 36.7%;
+  }
   
 }
 
 @media(max-width: 700px){
   .modal-content{
     margin-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     width: 230px;
   }
 
@@ -244,15 +260,20 @@
 
   #modal-form input[type=text]{
     width: 90%;
-    margin-bottom: 40px;
     margin-top: 0;
   }
 
   .modal .modal-botao{
-    margin-top: 0;
+    margin-top: 30px;
+    position: absolute;
+    left: 30px;
   }
 
   .modal .modal-botao input{
     padding: 20px 10px;
+  }
+
+  .modal form span{
+    position: static;
   }
 }

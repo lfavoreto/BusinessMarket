@@ -21,7 +21,7 @@ function validateCel(cel){
     }
 }
 
-function validarCPF(cpf) {	
+function validateCPF(cpf) {	
 	cpf = cpf.replace(/[^\d]+/g,'');	
 	if(cpf == '') return false;	
 	// Elimina CPFs invalidos conhecidos	
@@ -87,42 +87,57 @@ $("select[name='estado']").change(function () {
 $(function(){
     var et01 = document.getElementById('etapa01');
     var et02 = document.getElementById('etapa02');
+    var et03 = document.getElementById('etapa03');
 
-    var nm = document.getElementById('fullname');
-    var mail = document.getElementById('email');
-    var cl = document.getElementById('cel');
-    var cpf = document.getElementById('cpf');
-    var cidade = document.getElementById('cidade');
-    var estado = document.getElementById('estado');
+    function error(error, validate, campo){
+        if(!validate){
+            error.innerHTML = 'Digite um ' + campo + ' valido';
+        } else {
+            error.innerHTML = '';
+        }
+    }
 
     $('.next').click(function(){
         const email = $('#email').val();
         const name = $('#fullname').val();
         const cel = $('#cel').val();
-        
+
+        const errorName = document.getElementById('name-error');
+        const errorEmail = document.getElementById('email-error');
+        const errorCel = document.getElementById('cel-error');
+
+        error(errorName, validateName(name), 'nome');
+        error(errorEmail, validateEmail(email), 'e-mail');
+        error(errorCel, validateCel(cel), 'número de celular');
+
         if (validateEmail(email) && validateName(name) && validateCel(cel)) {
             et01.style.display = 'none';
             et02.style.display = 'block';
         }
     });
-    
-    $('.prev').click(function(){
-        et01.style = "display: block";
-        et02.style = "display: none";
-    });
 
-    $('.conti').click(function(){
-        if (mail.value && nm.value && cl.value && cpf.value && cidade.value && estado.value){
-            return false;
-        }
-    });
-
-    $('#enviar').click(function(){
-
+    $('.next-et02').click(function(){
         const cpf = $('#cpf').val();
         const uf = $('#estado').val();
+        const cidade = $('#cidade').val();
 
-        if (!validarCPF(cpf)) return false;
+        const errorCpf = document.getElementById('cpf-error');
+        const errorUf = document.getElementById('uf-error');
+        const errorCidade = document.getElementById('cidade-error');
+
+        error(errorCpf, validateCPF(cpf), 'CPF');
+        error(errorUf, uf, 'nome de Estado');
+        error(errorCidade, cidade, 'nome de cidade');
+        
+        if (validateCPF(cpf) && uf && cidade) {
+            et02.style.display = 'none';
+            et03.style.display = 'block';
+        }
+    });
+    
+    $('.prev').click(function(){
+        et02.style.display = 'none';
+        et01.style.display = 'block';
     });
 });
 
@@ -133,5 +148,5 @@ function switchElements($ele1, $ele2) {
 }
 
 if( $(window).width() <= 740){
-    switchElements($('#voltar'), $('#enviar'));
+    switchElements($('#et02-pv'), $('#et02-nt'));
 }

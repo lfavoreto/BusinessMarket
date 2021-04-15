@@ -649,15 +649,18 @@
                     <form action="" method="POST" id="modal-form">
                         <label for="name">Seu Nome:</label>
                         <input type="text" name="name" id="name" size="30" autocomplete="off" required>
+                        <span id="name-error"></span>
                         <br>
                         <label for="tel">Telefone:</label>
                         <input type="text" name="tel" id="tel" size="30" autocomplete="off" required>
+                        <span id="tel-error"></span>
                         <br>
                         <label for="cpf">CPF:</label>
                         <input type="text" name="cpf" id="cpf" size="30" autocomplete="off" required>
+                        <span id="cpf-error"></span>
 
                         <div class="modal-botao">
-                            <input type="submit" value="Concluir Inscrição">
+                            <input type="submit" value="Concluir Inscrição" id="envia-modal">
                         </div>
                     </form>
 

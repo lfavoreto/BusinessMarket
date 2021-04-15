@@ -69,8 +69,8 @@ main .ficha-cadastro{
     background-color: black;
     border-radius: 55px;
     color: white;
-    height: 800px;
     margin: 0 auto;
+    padding-bottom: 80px;
     padding-top: 280px;
     position: relative;
     overflow: hidden;
@@ -244,12 +244,25 @@ main form label{
     text-transform: uppercase;
 }
 
+main .cont span{
+    color: #c2ff01;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    position: absolute;
+    left: 27.6%;
+}
+
+main .cont #uf-error, main .cont #cidade-error{
+    margin-top: 52px;
+}
+
 main form fieldset input, main form fieldset select{
     background: none;
     border: none;
 	border-bottom: 2px solid #C2FF01;
     border-radius: 2px;
     color: white;
+    margin-bottom: 5px;
     padding: 15px 0;
     font-size: 13px;
     width: 100%;
@@ -304,13 +317,7 @@ main form input[type=submit]:hover{
 }
 
 main #etapa03 h1{
-    font-size: 20px;
-}
-
-main #etapa03 h2{
-    font-family: 'Oswald', sans-serif;
-    font-size: 32px;
-    text-transform: uppercase;
+    font-weight: bold;
 }
 
 main #etapa03 .botao{

@@ -36,7 +36,7 @@
                     <div class="conteiner">
                         <div class="cad">
                             <div class="position">
-                                <form action="conf-envio.html" method="POST" class="ficha-cadastro" id="formulario">
+                                <form action="" method="POST" class="ficha-cadastro" id="formulario">
                                     <fieldset id="etapa01">
                                         <ul>
                                             <li class="selected no-dotted-left first-selected"><div>✓</div></li>
@@ -48,23 +48,26 @@
                                         <div class="cont">
                                             <label for="fullname">Nome completo</label>
                                             <input type="text" name="fullname" id="fullname" placeholder="EX: Lucas Favoreto" autocomplete="off" required class="in-etapa01">
+                                            <span id="name-error" class="error"></span>
 
                                             <label for="email">E-mail</label>
                                             <input type="email" name="email" id="email" placeholder="EX: lucasfavoreto@gmail.com" autocomplete="off" required class="in-etapa01">
+                                            <span id="email-error" class="error"></span>
 
                                             <label for="cel">Celular</label>
-                                            <input type="tel" name="cel" id="cel" placeholder="EX: 13999999999" maxlength="15" minlength="14" autocomplete="off" required class="in-etapa01" minlength="15">
-                                            
+                                            <input type="tel" name="cel" id="cel" placeholder="EX: 13999999999" maxlength="15" minlength="14" autocomplete="off" required class="in-etapa01">
+                                            <span id="cel-error" class="error"></span>
+
                                             <div class="botao">
-                                                <input type="submit" name="next" value="Continuar" class="next acao conti">
+                                                <input type="submit" name="next" value="Continuar" class="next" onclick="return false;">
                                             </div>
                                         </div>
                                     </fieldset>
 
                                     <fieldset id="etapa02">
                                         <ul>
-                                            <li class="selected no-dotted-left first-selected"><div>✓</div></li>
-                                            <li class="selected"><div>✓</div></li>
+                                            <li class="selected no-dotted-left"><div>✓</div></li>
+                                            <li class="selected first-selected"><div>✓</div></li>
                                             <li class="no-dotted-right"><div>.03</div></li>
                                         </ul>
                                         <h1>Crie <strong>sua conta</strong></h1>
@@ -72,20 +75,37 @@
                                         <div class="cont">
                                             <label for="cpf">CPF</label>
                                             <input type="text" name="cpf" id="cpf" placeholder="EX: 999.999.999-99" autocomplete="off" minlength="14" maxlength="14" required class="in-etapa02">
+                                            <span id="cpf-error" class="error"></span>
 
                                             <label for="estado">Estado</label>
                                             <select id="estado" name="estado" required>
-                                                <option value="" disabled selected></option>
+                                                <option value="" disabled selected>Ex: São Paulo</option>
                                             </select>
+                                            <span id="uf-error" class="error"></span>
 
                                             <label for="cidade">Cidade</label>
                                             <select id="cidade" name="cidade" required>
                                                 <option value="" disabled selected>Ex: São Paulo</option>
                                             </select>
+                                            <span id="cidade-error" class="error"></span>
                                             
                                             <div class="botao">
-                                                <input type="submit" class="prev acao" value="Voltar" onclick="return false;" id="voltar">
-                                                <input type="submit" name="enviar" value="Enviar" class="subm" id="enviar">
+                                                <input type="submit" class="prev" value="Voltar" onclick="return false;" id="et02-pv">
+                                                <input type="submit" name="next" value="Continuar" onclick="return false;" class="next-et02" id="et02-nt">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset id="etapa03">
+                                        <ul>
+                                            <li class="selected no-dotted-left"><div>✓</div></li>
+                                            <li class="selected"><div>✓</div></li>
+                                            <li class="selected no-dotted-right first-selected"><div>✓</div></li>
+                                        </ul>
+                                        <h1>Obrigado por se inscrever</h1>
+                                        <div class="cont">
+                                            <div class="botao">
+                                                <input type="submit" name="enviar" value="Concluir" class="subm">
                                             </div>
                                         </div>
                                     </fieldset>

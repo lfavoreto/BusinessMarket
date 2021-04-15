@@ -45,14 +45,13 @@
         width: 100%;
     }
 
+    main .cont span{
+        left: 18.2%;
+    }
+
     main ul li.selected div::after, main ul li.selected div::before,
     main .ficha-cadastro::before, main .ficha-cadastro::after{
         display: none;
-    }
-
-    main #etapa03 .botao{
-        margin-top: 220px;
-        padding-bottom: 130px;
     }
 
     footer{
