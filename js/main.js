@@ -32,13 +32,13 @@ function anteriorVideo(){
 
 $(function(){
 
-    $('.back-to-top').hide();
+    $(".back-to-top").css("display", "none");
     $(window).scroll(function(){
        if($(this).scrollTop() > 1000){
-            $('.back-to-top').fadeIn();
-       } else{
-           $('.back-to-top').fadeOut();
-       }
+            $(".back-to-top").css("display", "block");
+        } else {
+            $(".back-to-top").css("display", "none");
+        }
     });
 
     $(".back-to-top").click(function() {
