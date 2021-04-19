@@ -259,9 +259,12 @@
         margin-right: auto;
     }
 
+    .ganhos .position .box-01{
+        padding-bottom: 140px;
+    }
+
     .ganhos .position .box-01, .ganhos .position .box-02{
         height: auto;
-        padding-bottom: 140px;
     }
 
     .ganhos .box-02 ul .valor{
@@ -362,7 +365,7 @@
 
     .publ .box-01 .conteiner{
         margin-right: auto;
-        padding-bottom: 80px;
+        padding-bottom: 30px;
     }
     .publ .box-02 .conteiner{
         margin-left: auto;

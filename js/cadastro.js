@@ -6,7 +6,7 @@ $("#cpf").mask("000.000.000-00");
 /*****VALIDATION******/
 
 function validateName(fullname){
-    const re = /^[A-Za-z-ç ^a-zà-ú]+$/;
+    const re = /^[A-Za-z-ç à-ú À-Ú]+$/;
     return re.test(fullname);
 }
 
