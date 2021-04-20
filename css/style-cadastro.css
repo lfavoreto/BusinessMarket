@@ -269,10 +269,15 @@ main form fieldset input, main form fieldset select{
 }
 
 select {
+    border: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
+}
+
+main form select:required{
+    box-shadow: none;
 }
 
 select:invalid {
